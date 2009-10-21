@@ -68,6 +68,7 @@ font-family:Geneva, Arial, Helvetica, sans-serif;
 
 footer {
   margin-bottom: 0;
+  text-align:right;
 }
 section {
      display: block;    
