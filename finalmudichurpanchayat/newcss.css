@@ -1,0 +1,70 @@
+header, nav, section, article, aside, footer {
+   display:block;
+}
+.nav ul {
+    display: block;
+    *zoom:1;
+    list-style:none;
+    margin:0;
+    padding:0;
+    background:#083a77;
+}
+.nav ul:before,.nav ul:after {
+    content:"";
+    display:table;
+}
+.nav ul:after {
+    clear:both;
+}
+.nav ul > li {
+    float:left;
+    position:relative;
+    background-color: #083a77;
+}
+.nav a {
+    display:block;
+    padding:10px 20px;
+    line-height:1.2em;
+    color: white;
+    border-left:1px solid #595959;
+    text-decoration: none;
+}
+.nav a:hover {
+    text-decoration:none;
+    background:#FFD700;
+    color: #000000;
+}
+.nav li ul {
+    background:#FFD700;
+}
+.nav li ul li {
+    width:200px;
+}
+.nav li ul a {
+    border:none;
+}
+.nav li ul a:hover {
+    background:#FFD700;
+}
+.nav li ul {
+    position:absolute;
+    left:0;
+    top:36px;
+    z-index:1;
+    max-height:0;
+    overflow:hidden;
+    -webkit-transform:perspective(400) rotate3d(1,0,0,-90deg);
+    -webkit-transform-origin:50% 0;
+    -webkit-transition:350ms;
+    -moz-transition:350ms;
+    -o-transition:350ms;
+    transition:350ms;
+}
+.nav ul > li:hover ul {
+    max-height:1000px;
+    -webkit-transform:perspective(400) rotate3d(0,0,0,0);
+}
+.nav ul li ul >li:hover ul{
+     max-height:1000px;
+    -webkit-transform:perspective(400) rotate3d(0,0,0,0);
+}
