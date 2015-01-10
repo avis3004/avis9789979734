@@ -1,5 +1,5 @@
 <?php
-
+include_once("ViaNettSMS.php");
 $host="localhost"; // Host name 
 $username="root"; // Mysql username 
 $password=""; // Mysql password 
@@ -28,10 +28,40 @@ if($result){
 echo "Successful";
 echo "<BR>";
 echo "<a href='/avis9789979734/finalmudichurpanchayat/startfile.php'>Back to main page</a>";
+SendSMS($ContactNumber,$ComplaintDesc);
 }
 
 else {
 echo "ERROR";
+}
+function SendSMS($ContactNumber,$ComplaintDesc)
+{
+	
+// Declare variables.
+$Username = "sivaganeshvbe@gmail.com";
+$Password = "7gl6q";
+$MsgSender = "919789979734";
+$DestinationAddress = $ContactNumber;
+$Message = $ComplaintDesc;
+
+// Create ViaNettSMS object with params $Username and $Password
+$ViaNettSMS = new ViaNettSMS($Username, $Password);
+try
+{
+	// Send SMS through the HTTP API
+	$Result = $ViaNettSMS->SendSMS($MsgSender, $DestinationAddress, $Message);
+	// Check result object returned and give response to end user according to success or not.
+	if ($Result->Success == true)
+		$Message = "Message successfully sent!";
+	else
+		$Message = "Error occured while sending SMS<br />Errorcode: " . $Result->ErrorCode . "<br />Errormessage: " . $Result->ErrorMessage;
+}
+catch (Exception $e)
+{
+	//Error occured while connecting to server.
+	$Message = $e->getMessage();
+}
+
 }
 ?> 
 
