@@ -1,0 +1,4 @@
+pull->add(stage)->commit->push
+Merge conflict
+push->conflict->pull->fix conflict->add->commit->push
+Test final upload file
