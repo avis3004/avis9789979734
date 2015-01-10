@@ -111,10 +111,11 @@
 		</script>
 		 
 		</li>		<li id="li_5" >
-		<label class="description" for="element_5">Complaint Description </label>
+		<label class="description" for="element_5">Complaint Description </label>		
 		<div>
-			<textarea id="element_5" name="element_5" class="element textarea medium"></textarea> 
-		</div><p class="guidelines" id="guide_5"><small>Please enter your complaint !</small></p> 
+			<textarea id="element_5" name="element_5" class="element textarea medium" onKeyPress=check_length(this.form); onKeyDown=check_length(this.form)></textarea> 
+		</div><p class="guidelines" id="guide_5"><small>Please enter your complaint !</small></p>
+		<div id="CharacterCount"></div> 
 		</li>		<li id="li_3" >
 		<label class="description" for="element_3">Contact Person Name </label>
 		<span>
@@ -148,5 +149,28 @@
 		</div>
 	</div>
 	<img id="bottom" src="bottom.png" alt="">
+	<script language=JavaScript>
+<!--
+	function check_length(my_form)
+	{
+		maxLen = 230; // max number of characters allowed
+		if (my_form.element_5.value.length >= maxLen) {
+			// Alert message if maximum limit is reached. 
+			// If required Alert can be removed. 
+			var msg = "You have reached your maximum limit of characters allowed";
+			alert(msg);
+			// Reached the Maximum length so trim the textarea
+			my_form.element_5.value = my_form.element_5.value.substring(0, maxLen);
+			 }
+			else{ // Maximum length not reached so update the value of element_5 counter
+				//my_form.CharacterCount.value = maxLen - my_form.element_5.value.length;
+				CharCounter = maxLen - my_form.element_5.value.length;				
+					document.getElementById("CharacterCount").innerHTML = "<i> <font color = brown>				Character Remaining is " + CharCounter + " out of 230 </font>";
+			}
+
+		}
+//-->
+</script>
+
 	</body>
 </html>
