@@ -20,7 +20,7 @@ $ContactPersonName = $_POST['element_3_1'];
 $ContactNumber = $_POST['element_4'];
 
 $sql="INSERT INTO $tbl_name(ComplaintType, ComplaintDateDD, ComplaintDateMM, ComplaintDateYYYY, ComplaintDesc, ContactPersonName,ContactNumber)VALUES('$ComplaintType','$ComplaintDateDD','$ComplaintDateMM','$ComplaintDateYYYY','$ComplaintDesc','$ContactPersonName','$ContactNumber')";
-echo $sql;
+//echo $sql;
 $result=mysql_query($sql);
 
 // if successfully insert data into database, displays message "Successful". 
