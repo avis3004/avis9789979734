@@ -36,7 +36,7 @@
                 <li><a href="">DEPARTMENTS</a>
                     <ul>
                         <li><a href="">Rural Development</a></li>
-                        <li><a href="">TWAD</a></li>
+                        <li><a href="twad.php">TWAD</a></li>
                         <li><a href="">Revenue</a></li>
                         <li><a href="">Health</a></li>
                         <li><a href="">Social Welfare</a></li>

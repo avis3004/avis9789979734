@@ -102,7 +102,7 @@ setInterval('cycleImages()', 4000);
                         are in Kancheepuram district, including those at Kunrathur, Erumaiyur, Nandampakkam, Sirukalathur,
                         Sikarayapuram, Kadaperi, Tiruneermalai, Ayyancheri, Kilambakkam and Nanmangalam.
                     </P>
-                    <P>
+                    <p>
                       Kanchipuram is also one of the most industrialized districts in the country, thanks to its proximity
                       to the state capital Chennai. Areas surrounding Sriperumbudur have turned out to become one of the 
                       largest manufacturing hubs of India. The district is home to the manufacturing units of Hyundai,
@@ -111,9 +111,9 @@ setInterval('cycleImages()', 4000);
                       (TCS), Infosys, Wipro Technologies, Cognizant Technology Solutions, etc. have set up their offices
                       in Kanchipuram district. TCS and Infosys have built huge offices with capacities of 22,000 and 25,000
                       employees, respectively.  
-                    </P>
-                    <p><a href=""></a></p>
-                    <p align='right'> <a href="http://www.kanchi.tn.nic.in/">For more information visit this page</a></p>
+                          <p> <a href="">Further information visit this page</a></p>
+                    </p>
+                   
         </section>
 <?php 
         include 'footer.php';
