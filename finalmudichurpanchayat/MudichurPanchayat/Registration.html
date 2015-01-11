@@ -99,7 +99,7 @@
 		document.getElementById("element_7").onchange = function() {
 		var xmlhttp;
 		var uname=document.getElementById("element_7");
-		document.getElementById("status").innerHTML = "<img src='/MudichurPanchayat/loader.gif' width='16' height='16'>"
+		document.getElementById("status").innerHTML = "<img src='/avis9789979734/finalmudichurpanchayat/MudichurPanchayat/loader.gif' width='16' height='16'>"
 		if (uname.value != "")
 		{
 		if (window.XMLHttpRequest)
@@ -119,17 +119,17 @@
 		AjaxResponse = xmlhttp.responseText;
 		if (AjaxResponse == 'Ok')
 		{
-			document.getElementById("status").innerHTML="<img src='/MudichurPanchayat/tick.gif' width='16' height='16'>";
+			document.getElementById("status").innerHTML="<img src='/avis9789979734/finalmudichurpanchayat/MudichurPanchayat/tick.gif' width='16' height='16'>";
 			
 		}
 		else if (AjaxResponse == 'Not Ok')
 		{
 
-			document.getElementById("status").innerHTML="<img src='/MudichurPanchayat/NotFound.jpg' width='16' height='16'>";	
+			document.getElementById("status").innerHTML="<img src='/avis9789979734/finalmudichurpanchayat/MudichurPanchayat/NotFound.jpg' width='16' height='16'>";	
 		}
 		}
 		};
-		xmlhttp.open("GET","/MudichurPanchayat/uname_availability.php?uname="+encodeURIComponent(uname.value),true);
+		xmlhttp.open("GET","/avis9789979734/finalmudichurpanchayat/MudichurPanchayat/uname_availability.php?uname="+encodeURIComponent(uname.value),true);
 		xmlhttp.send();
 		}
 		};

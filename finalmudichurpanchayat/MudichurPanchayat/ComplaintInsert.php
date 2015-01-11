@@ -1,15 +1,8 @@
 <?php
 include_once("ViaNettSMS.php");
-$host="localhost"; // Host name 
-$username="root"; // Mysql username 
-$password=""; // Mysql password 
-$db_name="panchayat"; // Database name 
+include_once("database_connection.php");
+
 $tbl_name="complaints"; // Table name 
-
-// Connect to server and select database.
-mysql_connect("$host", "$username", "$password")or die("cannot connect"); 
-mysql_select_db("$db_name")or die("cannot select DB");
-
 // Get values from form 
 $ComplaintType =$_POST['element_1'];
 $ComplaintDateDD =$_POST['element_6_1'];
@@ -28,7 +21,7 @@ if($result){
 echo "Successful";
 echo "<BR>";
 echo "<a href='/avis9789979734/finalmudichurpanchayat/startfile.php'>Back to main page</a>";
-SendSMS($ContactNumber,$ComplaintDesc);
+//SendSMS($ContactNumber,$ComplaintDesc);
 }
 
 else {

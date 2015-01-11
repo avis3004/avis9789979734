@@ -1,15 +1,7 @@
 <?php
 
-$host="localhost"; // Host name 
-$username="root"; // Mysql username 
-$password=""; // Mysql password 
-$db_name="panchayat"; // Database name 
-$tbl_name="registration"; // Table name 
-
-// Connect to server and select database.
-mysql_connect("$host", "$username", "$password")or die("cannot connect"); 
-mysql_select_db("$db_name")or die("cannot select DB");
-
+include_once("database_connection.php");
+$tbl_name="registration";
 // Get values from form 
 $FirstName =$_POST['element_1_1'];
 $LastName =$_POST['element_1_2'];
@@ -34,9 +26,9 @@ $Phone  = $_POST['element_3'];
 $Email  = $_POST['element_4'];
 $username = $_POST['element_7'];
 $Password = $_POST['element_9'];
-
+$UserType = "User";
 // Insert data into mysql 
-$sql="INSERT INTO $tbl_name(FirstName, LastName, Gender, StreetAddress, Line2, City,State, Zip, Country, Phone, Email, Username, Password)VALUES('$FirstName', '$LastName', '$Gender','$StreetAddress','$AddressLine2','$City','$State',$Postal,'$Country','$Phone','$Email','$username','$Password')";
+$sql="INSERT INTO $tbl_name(FirstName, LastName, Gender, StreetAddress, Line2, City,State, Zip, Country, Phone, Email, Username, Password, UserType)VALUES('$FirstName', '$LastName', '$Gender','$StreetAddress','$AddressLine2','$City','$State',$Postal,'$Country','$Phone','$Email','$username','$Password','$UserType')";
 //echo $sql;
 $result=mysql_query($sql);
 
@@ -44,7 +36,7 @@ $result=mysql_query($sql);
 if($result){
 echo "Successful";
 echo "<BR>";
-echo "<a href='form.html'>Back to main page</a>";
+echo "<a href='/avis9789979734/finalmudichurpanchayat/startfile.php'>Back to Home</a>";
 }
 
 else {
