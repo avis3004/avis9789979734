@@ -107,6 +107,10 @@ section {
     color: blue;
     text-decoration: underline;
 }
+.content h3{
+    color:#739AC5;
+    text-shadow: 2px 2px 4px #000000;
+}
 .content h1 {
     color: green;
     text-shadow: 2px 2px 4px #000000;
