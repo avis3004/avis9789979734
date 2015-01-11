@@ -1,7 +1,8 @@
 <?php
 $ComplaintType=$_REQUEST['ComplaintType'];
-mysql_connect("localhost","root","");
-mysql_select_db("panchayat");
+/*mysql_connect("localhost","root","");
+mysql_select_db("panchayat");*/
+include_once("database_connection.php");
 $result=mysql_query("SELECT ContactPersonName,TelephoneNo FROM departmentdetails where ComplaintType='$ComplaintType'");	
 
 //$result = mysql_query($data);
