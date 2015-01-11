@@ -28,7 +28,7 @@
                 <li><a href="">MY PANCHAYAT</a>
                  <ul>
                 <li><a href="">General particulars</a></li>    
-                <li><a href="">Elected body setup</a></li>   
+                <li><a href="electbody.php">Elected body setup</a></li>   
                 <li><a href="">Official setup</a></li>      
                 <li><a href="districtprofile.php">District profile</a></li>
                 <li><a href="">Panchayat profile</a></li>   
