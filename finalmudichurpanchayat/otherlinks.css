@@ -88,26 +88,14 @@ footer {
 }
 
 section {
-    
+    font-family: Arial, Helvetica, sans-serif ;    
     position: relative;
     top: 50px;
     float: right;
     width: 70%;
         
 }
-#sideul ul{
-    display: block;
-    *zoom:1;
-    list-style:none;
-    margin:0;
-    padding:0;
-    background:#083a77;
-}
-.content{
- 
-  
-    
-}
+
 .leftbar{
     float: left;
   width: 20%;
@@ -115,9 +103,17 @@ section {
   top: 80px;
   left: 20px;
 }
-#cycler{position:relative;}
-#cycler img{position:absolute;z-index:1}
-#cycler img.active{z-index:3}
+.content a{
+    color: blue;
+    text-decoration: underline;
+}
+.content h1 {
+    color: green;
+    text-shadow: 2px 2px 4px #000000;
+}
+#cycler{position:relative;z-index: -1}
+#cycler img{position:absolute;z-index:-1}
+#cycler img.active{z-index:-1}
 
 .nav a:hover {
     text-decoration:none;
@@ -128,15 +124,20 @@ section {
     background-color: #cc9900;
     color: #000000;
 }
-code {
-  background: #083a77;
-  border-radius: 6px;
+.leftbar li{
+  background: #3F6826;
+  border-radius: 30px;
+  border-color: #FFD700;
   color: #ffffff;
   display: block;
+  list-style-type: none;
   font: 14px/24px "Source Code Pro", Inconsolata, "Lucida Console", Terminal, "Courier New", Courier;
   padding: 24px 15px;
   text-align: center;
-}
+  }
+  .leftbar ul li:hover{
+      color: #FFDEAD;
+  }
 .bline{
          position: absolute;
          width: 400px;;

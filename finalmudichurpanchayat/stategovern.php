@@ -17,15 +17,21 @@ include 'header.php';
     </head>
     <body>
         <aside class="leftbar">
-    
-        <a href='stategovern.php'>
-            <code>STATE GOVT SCHEMES</code></a>
-            <code>CENTRAL GOVT SCHEMES</code>
-            <code>PANCHAYAT</code>
-            <code>NGO'S</code>
-        
-    
-        </aside>        
+            <ul>
+                <a href="stategovern.php"><li>
+                    STATE GOVT SCHEMES
+            </li></a>
+                <a href="centralgovern.php"><li>
+                    CENTRAL GOVT SCHEMES
+            </li></a>
+                 <a href=""><li>
+                    PANCHAYAT   
+            </li></a>
+                 <a href=""><li>
+                    NGO'S
+            </li></a>
+            </ul>   
+           </aside>        
         <section class="content">
             <h1>STATE GOVERNMENT PLANNING SCHEMES</h1>
             <ol>

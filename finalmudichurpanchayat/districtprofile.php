@@ -42,12 +42,12 @@ setInterval('cycleImages()', 4000);
         <aside class="leftbar">
            
    <div id="cycler">
-       <img class="active" src="images/kanchipuram images/kailasanathar_temple.jpg"height="300px"width="300px"  />
-       <img src="images/kanchipuram images/bannar1.jpg" height="300px"width="300px" />	
-       <img src="images/kanchipuram images/bannar2.jpg" height="300px"width="300px" />	
-       <img src="images/kanchipuram images/bannar3.jpg" height="300px"width="300px"  />		
-       <img src="images/kanchipuram images/bannar7.jpg" height="300px"width="300px"  />		
-       <img src="images/kanchipuram images/kanchi-kamakshi-temple-kanchipuram.jpg" height="300px"width="300px"  />		
+       <img class="active" src="images/kanchipuram images/kailasanathar_temple.jpg"height="300px"width="300px"z-index="+1"  />
+       <img src="images/kanchipuram images/bannar1.jpg" height="300px"width="300px" z-index="+1"/>	
+       <img src="images/kanchipuram images/bannar2.jpg" height="300px"width="300px" z-index="+1"/>	
+       <img src="images/kanchipuram images/bannar3.jpg" height="300px"width="300px"  z-index="+1"/>		
+       <img src="images/kanchipuram images/bannar7.jpg" height="300px"width="300px"  z-index="+1"/>		
+       <img src="images/kanchipuram images/kanchi-kamakshi-temple-kanchipuram.jpg" height="300px"width="300px"z-index="+1"  />		
 
 </div>
  
@@ -118,7 +118,7 @@ setInterval('cycleImages()', 4000);
                       in Kanchipuram district. TCS and Infosys have built huge offices with capacities of 22,000 and 25,000
                       employees, respectively.  
                     </P>
-                    <a href="">For more information visit this page</a>
+                    <p align="right"> <a href="http://www.kanchi.tn.nic.in/">For more information visit this page</a></p>
         </section>
 <?php 
         include 'footer.php';
