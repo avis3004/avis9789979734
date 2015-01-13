@@ -11,8 +11,10 @@ $ComplaintDateYYYY =$_POST['element_6_3'];
 $ComplaintDesc = $_POST['element_5'];
 $ContactPersonName = $_POST['element_3_1'];
 $ContactNumber = $_POST['element_4'];
+$WardNumber = $_POST['WardElement'];
+$StreetName = $_POST['StreetName'];
 
-$sql="INSERT INTO $tbl_name(ComplaintType, ComplaintDateDD, ComplaintDateMM, ComplaintDateYYYY, ComplaintDesc, ContactPersonName,ContactNumber)VALUES('$ComplaintType','$ComplaintDateDD','$ComplaintDateMM','$ComplaintDateYYYY','$ComplaintDesc','$ContactPersonName','$ContactNumber')";
+$sql="INSERT INTO $tbl_name(ComplaintType, ComplaintDateDD, ComplaintDateMM, ComplaintDateYYYY, ComplaintDesc, ContactPersonName,ContactNumber,WardNumber,StreetName)VALUES('$ComplaintType','$ComplaintDateDD','$ComplaintDateMM','$ComplaintDateYYYY','$ComplaintDesc','$ContactPersonName','$ContactNumber','$WardNumber','$StreetName')";
 //echo $sql;
 $result=mysql_query($sql);
 

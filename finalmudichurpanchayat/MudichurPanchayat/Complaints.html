@@ -61,7 +61,7 @@
 		
 		var ComplaintTypeObj=document.getElementById("element_1");
 		var ComplaintType = ComplaintTypeObj.options[ComplaintTypeObj.selectedIndex].text;
-		console.log(ComplaintType);
+		//console.log(ComplaintType);
 		if (ComplaintType != "")
 		{
 		if (window.XMLHttpRequest)
@@ -98,7 +98,72 @@
 		}
 		};
 		</script>
+		<ul >
+		<li id="StreetNameList" >
+		<label class="description" for="StreetLabel">StreetName </label>
+		<div>
+		<select class="element select medium" id="StreetName" name="StreetName">
+		</select>
+		</div><p class="guidelines" id="StreetNameGuide"><small>Select your Street Name</small></p> 
+		</li>
+			
+		<script type="text/javascript">
+		ErrorFlag=0;
+
+		document.getElementById("WardElement").onchange = function() {
+		var xmlhttp;
+		var select = document.getElementById("StreetName");
+		var WardObj=document.getElementById("WardElement");
+		var WardNumber = WardObj.options[WardObj.selectedIndex].text;
+		select.options.length = 0;
+		if (WardNumber != "")
+		{
+		if (window.XMLHttpRequest)
+		{
+		xmlhttp=new XMLHttpRequest();
+		}
+		else
+		{
+		xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+		}
 		
+		xmlhttp.onreadystatechange=function()
+		{
+		if (xmlhttp.readyState==4 && xmlhttp.status==200)
+		{
+		
+		var AjaxResponse = (xmlhttp.responseText);
+		//console.log (AjaxResponse);
+		if ($.isArray(AjaxResponse) || 	AjaxResponse.length)
+		{
+		var ResponseCounter = 0;		
+		var RecordsetArray = jQuery.parseJSON(AjaxResponse);
+		var ResponseSize = RecordsetArray.length;
+		
+			while (ResponseCounter < ResponseSize)
+			{
+				StreetName = RecordsetArray[ResponseCounter].StreetName;		
+				var options = document.createElement("option");
+				options.text = StreetName;
+				options.value = StreetName;
+				select.appendChild(options);
+				/*document.getElementById("StreetName").text = StreetName;
+				document.getElementById("StreetName").value = StreetName;*/
+				ResponseCounter=ResponseCounter+1;
+				console.log(StreetName);
+			}
+		}
+		else
+		{
+			alert("Invalid Query");
+		}
+		}
+		};
+		xmlhttp.open("GET","/avis9789979734/finalmudichurpanchayat/MudichurPanchayat/WardResponse.php?WardNumber="+encodeURIComponent(WardNumber),true);
+		xmlhttp.send();
+		}
+		};
+		</script>
 		<li id="li_6">
 		<label class="description" for="element_6">Date of Complaint </label>
 		<span>
