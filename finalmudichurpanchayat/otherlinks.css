@@ -5,6 +5,20 @@ html{
     display: block;
     overflow-x:  hidden;
 }
+
+.link_container a {
+    background-color: #F0F0F0;
+    border-bottom: 1px solid #000000;
+    border-left: 1px solid #000000;
+    border-right: 1px solid #000000;
+    border-top: 1px solid #000000;
+    color: #000000;
+    display: block;
+    height: 2.5em;
+    width: 9em;       
+    text-decoration: none;     
+    text-align: center;
+}
 /*
 body{
     background: url(images/pattern.jpg ) top left repeat;
