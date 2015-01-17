@@ -23,7 +23,7 @@ if($result){
 echo "Successful";
 echo "<BR>";
 echo "<a href='/avis9789979734/finalmudichurpanchayat/startfile.php'>Back to main page</a>";
-SendSMS($ContactNumber,$ComplaintDesc);
+//SendSMS($ContactNumber,$ComplaintDesc);
 }
 
 else {
