@@ -105,7 +105,10 @@
                                     <li><a href="">Office</a></li>
                                     <li><a href="">Public</a></li>
                                 </ul></li>
-                                <li><a href="MudichurPanchayat/Complaints.html">COMPLAINTS</a>
+                                <li><a href="#">COMPLAINTS</a>
+								<ul>
+								  <li><a href="PHPGrid/PGrid.php">Admin view</a></li>
+						          <li><a href="MudichurPanchayat/Complaints.html">User Complaints</a></li>
                                 </li>
             </ul>
             </section>
