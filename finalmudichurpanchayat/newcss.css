@@ -1,6 +1,4 @@
-header, nav, section, article, aside, footer {
-   display:block;
-}
+
 .nav ul {
     display: block;
     *zoom:1;

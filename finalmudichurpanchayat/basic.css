@@ -5,25 +5,6 @@ html{
     display: block;
     overflow-x:  hidden;
 }
-/*
-body{
-    background: url(images/pattern.jpg ) top left repeat;
-
-background-attachment: fixed;
-
-background-position: top left;
-
--webkit-background-size: auto, cover;
-
--moz-background-size: auto, cover;
-
--o-background-size: auto, cover;
-
-background-size: auto, cover;
-
-}
-
-*/
 .title{
     position: relative;
     left: 0px;
@@ -76,12 +57,7 @@ background-size: auto, cover;
     width: 100%;
     font-size:1em;
 }
-header,
-section,
-aside,
-footer {
-  margin: 0 1.5% 24px 1.5%;
-}
+
 footer {
   margin-bottom: 0;
 }
@@ -129,7 +105,7 @@ aside {
         
         }
         .copyright{
-            height: 60px;
+            height: 20px;
         }
                   
           /* footer{
