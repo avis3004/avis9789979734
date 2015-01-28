@@ -1,11 +1,12 @@
 <?php 
+ini_set("error_reporting", E_ALL & ~E_DEPRECATED);
 
 // include db config 
 include_once("/config.php"); 
 
 // set up DB 
 mysql_connect('localhost','root','');
-//mysql_select_db('panchayat'); 
+
 mysql_select_db(PHPGRID_DBNAME); 
 
 // include and create object 
