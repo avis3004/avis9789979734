@@ -7,6 +7,7 @@ include 'header.php';
         <meta charset="UTF-8">
         <link href="basic.css" rel="stylesheet"type="text/css">
         <link href="newcss.css" rel="stylesheet" type="text/css">
+		 <link href="otherlinks.css"rel="stylesheet"type="text/css"">
          <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta http-equiv="imagetoolbar" content="no" />
 	

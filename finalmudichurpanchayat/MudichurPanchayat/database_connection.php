@@ -1,4 +1,5 @@
 <?php
+ini_set("error_reporting", E_ALL & ~E_DEPRECATED);
 $mysql_hostname = "localhost";
 $mysql_user = "root";
 $mysql_password = "";
