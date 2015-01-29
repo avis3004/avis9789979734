@@ -67,7 +67,7 @@ section {
 
     left: 100px;
   float: left;
-  width: 50%;
+  width: 100%;
 }
 .slideshow{
              position: relative;
@@ -99,6 +99,7 @@ aside {
          width: 400px;
          background-color: #083a77;
          color: #ffffff;
+		 z-index:1;
         }
         .marqueetext{
             
@@ -108,32 +109,4 @@ aside {
         .copyright{
             height: 20px;
         }
-                  
-          /* footer{
-                 position: relative;
-                 clear: both;
-                 margin-bottom: 0;
-                 background-color: #083a77;
-                list-style-type: symbols;
-                color:palegoldenrod;
-                font-size: 16px;
-                top: 25px;
-                 
-           }*/
-          
-           .footerlinks ul table{
-               left: 250px;
-               position: relative;
-               
-           }
-           .footerlinks ul table td{
-               padding: 55px;
-           }
-           .footerlinks ul li {
-               list-style-type: symbols;
-               color: palegoldenrod;
-                   
-           }
-           .footerlinks ul li a{
-                 color:palegoldenrod;
-           }
+         

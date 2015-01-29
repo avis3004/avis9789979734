@@ -113,7 +113,7 @@ setInterval('cycleImages()', 4000);
                       employees, respectively.  
                     </P>
                     <p><a href=""></a></p>
-                    <p align='right'> <a href="http://www.kanchi.tn.nic.in/">For more information visit this page</a></p>
+                    <p class='plink' align='right'> <a href="http://www.kanchi.tn.nic.in/">For more information visit this page</a></p>
         </section>
 <?php 
         include 'footer.php';
