@@ -34,7 +34,18 @@ if($count==1){
 header("location:startfile.php");
 }
 else {
-echo "Wrong Username or Password";
+header("location:startfile.php");
+?>
+<html>
+<script>
+function myFunction() {
+    alert("Hello\nHow are you?");
+}
+</script>
+<?php
+
 }
 ob_end_flush();
 ?>
+
+</html>
