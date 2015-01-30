@@ -33,6 +33,7 @@
   <ul>
     <li id="login">
       <a id="login-trigger" href="#">
+	  <img src="images/login button.png"width="20"height="20">
         Log in <span>▼</span>
       </a>
       <div id="login-content">
@@ -51,7 +52,7 @@
       </div>                     
     </li>
     <li id="signup">
-        <a href="MudichurPanchayat/Registration.html">Register</a>
+        <a href="MudichurPanchayat/Registration.php">Register</a>
     </li>
    
   </ul>
@@ -108,7 +109,7 @@
                                 <li><a href="#">COMPLAINTS</a>
 								<ul>
 								  <li><a href="PHPGrid/PGrid.php">Admin view</a></li>
-						          <li><a href="MudichurPanchayat/Complaints.html">User Complaints</a></li>
+						          <li><a href="MudichurPanchayat/Complaints.php">User Complaints</a></li>
                                 </li>
             </ul>
             </section>
