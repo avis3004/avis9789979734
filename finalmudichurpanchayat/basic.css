@@ -89,22 +89,21 @@ aside {
 }
 .sidebar1{
     position: absolute;
-    top: 220px;
+    top: 290px;
     left: 850px;
     
 }
 .bline{
          position: absolute;
-        display: block;
+		 display: block;
          width: 400px;
          background-color: #083a77;
          color: #ffffff;
 		 z-index:1;
-        }
+		 }        
         .marqueetext{
-            
-         width: 400px;
-        
+         
+		        width: 400px;
         }
         .copyright{
             height: 20px;
