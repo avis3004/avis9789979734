@@ -107,9 +107,11 @@
                             </li>
                             <li><a href="">GOVT ORDER</a>
                                 <ul>
-                                    <?php if( $_SESSION["usertype"] == "Employee") { ?>
+                                                              
+                                    <?php if(isset( $_SESSION["usertype"])){
+									   if( $_SESSION["usertype"] == "Employee") { ?>
                                       <li><a href="">Office</a></li>
-                                    <?php } ?>                    
+                                    <?php } }?>                    
                                       <li><a href="">Public</a></li>
                                 </ul></li>
                                 <li><a href="#">COMPLAINTS</a>
