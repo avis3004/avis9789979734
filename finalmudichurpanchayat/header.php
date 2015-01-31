@@ -52,7 +52,7 @@
           <fieldset id="actions">
             <input id="submit" type="submit" name="Submit" value="Login">
           </fieldset>
-        </form>
+          </form>
       </div>                     
     </li>
     <li id="signup">
