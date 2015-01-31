@@ -1,5 +1,5 @@
 <?php
-include 'form_header.php';
+//include 'form_header.php';
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
@@ -32,8 +32,8 @@ include 'form_header.php';
 			<option value="Street Lights" >Street Lights</option>
 			<option value="Road" >Road</option>
 		</select>
-		<label>DATE</label>
-                        <input type="date" name="sdate" />
+		<!--<label>DATE</label>
+                        <input type="date" name="sdate" />-->
 		</div><p class="guidelines" id="guide_1"><small>Register your type of complaint</small></p> 
 		</li>
 		<ul >
