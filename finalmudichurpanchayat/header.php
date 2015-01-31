@@ -1,4 +1,8 @@
-﻿<!DOCTYPE html>
+﻿<?php
+  session_start(); // must be before any output
+ ?>
+ 
+<!DOCTYPE html>
 <html>
     <head>
         <title>Mudichur panchayat</title>
@@ -103,8 +107,10 @@
                             </li>
                             <li><a href="">GOVT ORDER</a>
                                 <ul>
-                                    <li><a href="">Office</a></li>
-                                    <li><a href="">Public</a></li>
+                                    <?php if( $_SESSION["usertype"] == "Employee") { ?>
+                                      <li><a href="">Office</a></li>
+                                    <?php } ?>                    
+                                      <li><a href="">Public</a></li>
                                 </ul></li>
                                 <li><a href="#">COMPLAINTS</a>
 								<ul>
