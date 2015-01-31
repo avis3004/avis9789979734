@@ -1,6 +1,6 @@
 <?php
-include_once("ViaNettSMS.php");
 include_once("database_connection.php");
+include_once("ViaNettSMS.php");
 
 $tbl_name="complaints"; // Table name 
 // Get values from form 

@@ -32,6 +32,8 @@
 			<option value="Street Lights" >Street Lights</option>
 			<option value="Road" >Road</option>
 		</select>
+		<!--<label>DATE</label>
+                        <input type="date" name="sdate" />-->
 		</div><p class="guidelines" id="guide_1"><small>Register your type of complaint</small></p> 
 		</li>
 		<ul >
@@ -183,7 +185,7 @@
 		</span>
 	
 		<span id="calendar_6">
-			<img id="cal_img_6" class="datepicker" src="/MudichurPanchayat/calendar.gif" alt="Pick a date.">	
+			<img id="cal_img_6" class="datepicker" src="../MudichurPanchayat/calendar.gif" alt="Pick a date.">	
 		</span>
 		<script type="text/javascript">
 			Calendar.setup({

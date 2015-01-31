@@ -99,8 +99,12 @@ aside {
          width: 400px;
          background-color: #083a77;
          color: #ffffff;
+<<<<<<< HEAD
 		 z-index:1;
 		 }        
+=======
+        }
+>>>>>>> 72e26d2768d81e160cd8952573ef5c0921a33798
         .marqueetext{
          
 		        width: 400px;
