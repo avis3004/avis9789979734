@@ -118,11 +118,14 @@
 								     <li><a href="MudichurPanchayat/Complaints.php">User Complaints</a></li>
                                 </li>
             </ul>
-			 <li><a href="#">ADMIN</a>
+      <?php if(isset( $_SESSION["usertype"])){
+      if( $_SESSION["usertype"] == "Admin") { ?>
+			    <li><a href="#">ADMIN</a>
 								<ul>
 								  <li><a href="PHPGrid/PGrid.php">Complaints view</a></li>
 						          <li><a href="edoc.php">Edit Documents</a></li>
                                 </li>
+      <?php } }?>
             </ul>
             </section>
             </div>
