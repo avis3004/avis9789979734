@@ -43,13 +43,25 @@
                     print 'WELCOME! ' . $_SESSION['usertype'] ." ". $_SESSION['username'];
                 ?></div>
       <?php }?>
-            <div class="hlogin">
-                               <nav>
-  <ul>
+<div class="hlogin">
+  <nav>
+   <ul>
     <li id="login">
-      <a id="login-trigger" href="#">
-	 <!-- <img src="images/login button.png"width="20"height="20">-->
-        Log in <span>&#9660;</span>      </a>
+
+
+
+            <?php if(isset( $_SESSION["usertype"])) { ?>
+                <a id="login-trigger" href="Logout.php"> Logout </a>
+
+            <?php } else { ?>
+
+               <a id="login-trigger" href="#">
+               <!-- <img src="images/login button.png"width="20"height="20">-->
+                Log in <span>&#9660;</span>      </a>
+
+            <?php } ?>                 
+           
+          
       <div id="login-content">
         <form action="checklogin.php" method="post" name="form1" id="form1">
           <fieldset id="inputs">
@@ -62,14 +74,16 @@
           <fieldset id="actions">
             <input id="submit" type="submit" name="Submit" value="Login" />
           </fieldset>
-          </form>
+          </form>   
       </div>                     
     </li>
-    <li id="signup">
-        <a href="MudichurPanchayat/Registration.php">Register</a>    </li>
+      <li id="signup">
+        <a href="MudichurPanchayat/Registration.php">Register</a>    
+      </li>
+
   </ul>
-</nav>
-            </div>
+ </nav>
+</div>
             <div class="hline">            </div>
             <div class="nav">
             <div id="navbar">
