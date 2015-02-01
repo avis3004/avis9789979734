@@ -41,7 +41,7 @@
                     /*require_once ('Authenticator.php');
                     if (!Authenticator::startSession())
                         print 'you are not logged in';*/
-                    print 'WELCOME! ' . $_SESSION['usertype'] ." ". $_SESSION['username'];
+                    print 'WELCOME! ' . $_SESSION['username'];
                 ?></div>
       <?php }?>
       

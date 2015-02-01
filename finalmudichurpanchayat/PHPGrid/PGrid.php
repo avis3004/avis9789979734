@@ -1,4 +1,7 @@
 <?php 
+
+session_start();
+
 ini_set("error_reporting", E_ALL & ~E_DEPRECATED);
 
 // include db config 
@@ -23,7 +26,13 @@ $g->table = "complaints";
 // render grid 
 $out = $g->render("list1"); 
 
+if(isset( $_SESSION["usertype"])) {
+
+ if( $_SESSION["usertype"] == "Admin") { 
+
 ?> 
+
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"> 
 <html> 
 <head> 
@@ -41,3 +50,16 @@ $out = $g->render("list1");
     </div> 
 </body> 
 </html> 
+
+ <?php }
+   else { 
+
+               echo  "Error - you should have admin access to this page";
+              
+   } 
+
+   } else { 
+
+               echo  "Error - you dont have access to this page";
+              
+   } ?>  
