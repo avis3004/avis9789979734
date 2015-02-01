@@ -1,6 +1,6 @@
 <?php
   session_start(); // must be before any output
- ?>
+?>
  
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -34,8 +34,15 @@
             <div id="logo">
                 <img src="images/header copy.png" width="700"height="130" />
 				<img src="images/emb.png" width="70"height="130" /></div>
+      <?php if(isset( $_SESSION["username"])){ ?>
                 <div class="welcome">
-				    WELCOME USER...					</div>
+				         <?php
+                    /*require_once ('Authenticator.php');
+                    if (!Authenticator::startSession())
+                        print 'you are not logged in';*/
+                    print 'WELCOME! ' . $_SESSION['usertype'] ." ". $_SESSION['username'];
+                ?></div>
+      <?php }?>
             <div class="hlogin">
                                <nav>
   <ul>
