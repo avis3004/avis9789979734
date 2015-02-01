@@ -30,7 +30,7 @@ setInterval('cycleImages()', 4000);
         <script type="text/javascript" src="basicjs.js">
         </script>   
         <link href="otherlinks.css" rel="stylesheet"type="text/css">
-
+        
     </head>
     <body>
         <aside class="leftbar">

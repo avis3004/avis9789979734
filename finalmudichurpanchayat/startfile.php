@@ -99,11 +99,8 @@ include 'header.php';
                 
                 <marquee style="font-family: Book Antiqua; color: #000000" bgcolor="#ffffff" direction="up"delay="10">
                     <div class="marqueetext">          
-                    Mudichur is small village located in Tambaram Taluka
-                    of Kancheepuram district, Tamil Nadu with total 3854
-                    families residing. The Mudichur village has population
-                    of 15438 of which 7748 are males while 7690 are females
-                    as per Population Census 2011. .                    </div>
+                   
+				        </div>
               </marquee>
                             </div>
         </aside>

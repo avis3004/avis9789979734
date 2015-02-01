@@ -1,3 +1,4 @@
+/*header*/
 .link_container a {
     background-color: #F0F0F0;
     border-bottom: 1px solid #000000;
@@ -27,11 +28,17 @@
        left: 150px;
        top: 15px;
 }
-#flag{
-    position: absolute;
-    right: 300px;
-    top:15px;
+
+.welcome{
+position:absolute;
+color:#ffffff;
+top:30px;
+right:100px;
+font-size:24px;
+
+
 }
+
  .hlogin{
      display: block;
        position: absolute;
@@ -39,6 +46,7 @@
        top: 80px;
        color: #ffffff;
        }
+/*header*/
 
        a{
        color: #ffffff;
@@ -68,7 +76,7 @@
 header{
    
 }
-header,
+
 section,
 aside,
 footer {
@@ -252,7 +260,7 @@ nav #signup a {
   padding: 0 8px;
   text-decoration: none;
   color: #ffffff;
-  text-shadow: 0 1px 0 #fff; 
+ /* text-shadow: 0 1px 0 #fff;*/
 }
 
 nav #signup a {
@@ -363,11 +371,3 @@ fieldset{
   right: 2px;
 }
 
-.welcome{
-position:absolute;
-color:#ffffff;
-top:30px;
-right:100px;
-font-size:24px;
-
-}
