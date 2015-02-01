@@ -363,5 +363,11 @@ fieldset{
   right: 2px;
 }
 
-p{
+.welcome{
+position:absolute;
+color:#ffffff;
+top:30px;
+right:100px;
+font-size:24px;
+
 }

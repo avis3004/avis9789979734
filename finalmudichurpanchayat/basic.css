@@ -15,6 +15,14 @@ html{
     box-shadow: inset 5PX 5PX 5PX black;
     margin-bottom: 0px ; 
 }
+.welcome{
+position:absolute;
+color:#ffffff;
+top:30px;
+right:100px;
+font-size:24px;
+font-family:Geneva, Arial, Helvetica, sans-serif;
+}
 #logo{
        position: absolute;
        left: 150px;

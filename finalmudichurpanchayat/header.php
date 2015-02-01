@@ -8,6 +8,7 @@
         <title>Mudichur panchayat</title>
         <meta charset="UTF-8">
         <link href="otherlinks.css" rel="stylesheet"type="text/css">
+		
         
    <!--[if lt IE 9]>
 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -31,7 +32,9 @@
         <header class="title">
             <div id="logo">
                 <img src="images/header copy.png" width="700"height="130"></div>
-                    
+                <div class="welcome">
+				    WELCOME USER...
+					</div>
             <div class="hlogin">
                                <nav>
   <ul>
