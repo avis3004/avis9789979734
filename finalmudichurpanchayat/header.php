@@ -34,6 +34,7 @@
             <div id="logo">
                 <img src="images/header copy.png" width="700"height="130" />
 				<img src="images/emb.png" width="70"height="130" /></div>
+      
       <?php if(isset( $_SESSION["username"])){ ?>
                 <div class="welcome">
 				         <?php
@@ -43,6 +44,7 @@
                     print 'WELCOME! ' . $_SESSION['usertype'] ." ". $_SESSION['username'];
                 ?></div>
       <?php }?>
+      
 <div class="hlogin">
   <nav>
    <ul>
@@ -128,17 +130,19 @@
                             <li><a href="">GOVT ORDER</a>
                                 <ul>
                                                               
-                                    <?php if(isset( $_SESSION["usertype"])){
-									   if( $_SESSION["usertype"] == "Employee") { ?>
+                     <?php if(isset( $_SESSION["usertype"])){
+									   if( $_SESSION["usertype"] == "Employee" or $_SESSION["usertype"] == "Admin") { ?>
                                       <li><a href="">Office</a></li>
                                     <?php } }?>                    
                                       <li><a href="">Public</a></li>
                                 </ul></li>
-                                <li><a href="#">COMPLAINTS</a>
-								<ul>
-								     <li><a href="MudichurPanchayat/Complaints.php">User Complaints</a></li>
-                                </li>
-            </ul>
+                                <?php if(isset( $_SESSION["usertype"])){ ?>
+                                 <li><a href="#">COMPLAINTS</a>
+								                  <ul>
+								                  <li><a href="MudichurPanchayat/Complaints.php">User Complaints</a></li>
+                                  </li>
+                                  </ul>
+                                 <?php }?>
       <?php if(isset( $_SESSION["usertype"])){
       if( $_SESSION["usertype"] == "Admin") { ?>
 			    <li><a href="#">ADMIN</a>
