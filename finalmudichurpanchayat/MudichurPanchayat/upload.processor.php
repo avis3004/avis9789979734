@@ -1,8 +1,11 @@
 <?php 
-include_once("database_connection.php");
-$tbl_name="Gallery";
-$UploadDate= date("d/m/y");
-$sql = "INSERT INTO $tbl_name(UploadDate, FilePath)VALUES($UploadDate,$uploadFilename)";
+
+session_start();
+
+//global $uploadFilename;
+
+//$UploadDate= date("d/m/y");
+//$sql = "INSERT INTO $tbl_name(UploadDate, FilePath)VALUES($UploadDate,$uploadFilename)";
 // filename: upload.processor.php 
 
 // first let's set some variables 
@@ -63,13 +66,15 @@ while(file_exists($uploadFilename = $uploadsDirectory.$now.'-'.$_FILES[$fieldnam
  
 // If you got this far, everything has worked and the file has been successfully saved. 
 // We are now going to redirect the client to a success page. 
+$_SESSION["FileName"] = $uploadFilename;
 header('Location: ' . $uploadSuccess); 
-$result=mysql_query($sql);
+
+/*$result=mysql_query($sql);
 if($result){
 echo "Successful";
 echo "<BR>";
 echo "<a href='/avis9789979734/finalmudichurpanchayat/startfile.php'>Back to main page</a>";
-}
+}*/
 // The following function is an error handler which is used 
 // to output an HTML error page if the file upload fails 
 function error($error, $location, $seconds = 5) 

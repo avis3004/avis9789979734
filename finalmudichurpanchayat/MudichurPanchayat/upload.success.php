@@ -1,7 +1,21 @@
 <?php 
+include_once("database_connection.php");
+session_start();
+$tbl_name="gallery";
+$uploadFilename= $_SESSION['FileName'];
+$UploadDate= date("d/m/y");
+//$UploadDate=now();
+//echo $UploadDate;
+$sql = "INSERT INTO $tbl_name(UploadDate, FilePath)VALUES('$UploadDate','$uploadFilename')";
 
+$result=mysql_query($sql);
+if($result){
+echo "Successful";
+echo "<BR>";
+echo "<a href='/avis9789979734/finalmudichurpanchayat/startfile.php'>Back to main page</a>";
+}
 // filename: upload.success.php 
-
+//include 'upload.processor.php';
 ?><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" 
 "http://www.w3.org/TR/html4/strict.dtd"> 
 
@@ -16,7 +30,6 @@
     </head> 
      
     <body> 
-     
         <div id="Upload"> 
             <h1>File upload</h1> 
             <p>Congratulations! Your file upload was successful</p> 
@@ -25,3 +38,4 @@
     </body> 
 
 </html>
+?>
