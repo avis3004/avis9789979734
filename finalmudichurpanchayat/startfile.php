@@ -1,5 +1,6 @@
 <?php
 include 'header.php';
+include 'MudichurPanchayat/database_connection.php';
 ?>
 <html>
     <head>
@@ -85,21 +86,32 @@ include 'header.php';
                         the highest authorities at the Secretariat at Chennai.
                         The Panchayat accounts are fully computerized.
                     </p>
-               
-                <br>
-                 
-              
-        </section>x
-
+                  <br>
+        </section>
         <aside>
             <div class="sidebar1">
                 <div class="bline">
                     <code><h1><center>NEWS</center></h1></code></div>
-                
-                
+				<?php
+				 $query=("SELECT newsContent FROM newsfeed ORDER BY newsDate DESC LIMIT 1");
+  $rs_news = mysql_query($query) or die("Query to get data from news table failed: " . mysql_error());
+   
+				?>
                 <marquee style="font-family: Book Antiqua; color: #000000" bgcolor="#ffffff" direction="up"delay="10">
-                    <div class="marqueetext">          
-                   
+                    <div class="marqueetext">   
+					<?php
+					 echo '<table border="0" cellpadding="5">';
+   					 while ($row = mysql_fetch_assoc($rs_news))
+      				  {
+       					 echo '<tr>';
+        					foreach ($row as $column) {
+            				echo "<td>$column</td>";
+       					 }
+       						 echo '</tr>';
+    	    echo '</table>';
+                         
+			}		
+			?>       
 				        </div>
               </marquee>
                             </div>

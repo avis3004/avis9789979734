@@ -83,7 +83,12 @@ footer {
   margin: 0 1.5% 24px 1.5%;
 }
 footer {
+position:fixed;
   margin-bottom: 0;
+  width:100%;
+  margin-left:0px;
+  padding-bottom:0px;
+  bottom:0px;
 }
 section {
      display: block;    
@@ -92,6 +97,7 @@ section {
     left: 100px;
   float: left;
   width: 50%;
+  height:100%;
 }
 
 .leftbar{
