@@ -32,8 +32,9 @@
         
         <header class="title">
             <div id="logo">
-                <img src="images/header copy.png" width="700"height="130" />
-				<img src="images/emb.png" width="70"height="130" /></div>
+                <img src="images/header copy.png" width="700"height="130" /></div>
+				<div id="emblem">
+				<img src="images/emblem1.png" width="90"height="130" /></div>
       
       <?php if(isset( $_SESSION["username"])){ ?>
                 <div class="welcome">
