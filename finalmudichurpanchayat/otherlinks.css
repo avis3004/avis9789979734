@@ -28,7 +28,11 @@
        left: 150px;
        top: 15px;
 }
-
+#emblem{
+       position: absolute;
+       left: 800px;
+       top: 15px;
+}
 .welcome{
 position:absolute;
 color:#CCEEFF;
@@ -76,7 +80,11 @@ font-size:18px;
 header{
    
 }
-
+section{
+position:absolute;
+top:60px;
+padding-top:30px;
+}
 section,
 aside,
 footer {
