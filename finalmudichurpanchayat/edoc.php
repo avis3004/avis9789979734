@@ -1,11 +1,13 @@
 <?php
 include 'header.php';
 include 'MudichurPanchayat/database_connection.php';
+if ($_POST) {
 $date= date('Y-m-d H:i:s');
 $news=$_POST['message'];
  $query=("INSERT INTO panchayat.newsfeed (idnewsfeed, newsDate, newsContent)
   VALUES (NULL, '$date', '$news');");
   $rs_dnews = mysql_query($query) or die("Query to get data from news table failed: " . mysql_error());
+  }
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -34,7 +36,7 @@ $news=$_POST['message'];
 	</form></td>
     <td>
 	<?php
-			include 'MudichurPanchayat/GalleryUpload.php';
+			include 'GalleryUpload.php';
 			?></td>
   </tr>
 </table>
