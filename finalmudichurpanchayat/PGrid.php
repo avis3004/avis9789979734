@@ -6,7 +6,7 @@ session_start();
 ini_set("error_reporting", E_ALL & ~E_DEPRECATED);
 
 // include db config 
-include_once("/config.php"); 
+include_once("config.php"); 
 
 // set up DB 
 mysql_connect('localhost','root','');
@@ -33,19 +33,19 @@ if(isset( $_SESSION["usertype"])) {
 
 ?> 
 <?php
-include '../header.php';
+include 'header.php';
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"> 
 <html> 
 <head> 
-    <link rel="stylesheet" type="text/css" media="screen" href="/avis9789979734/finalmudichurpanchayat/PHPGrid/lib/js/themes/redmond/jquery-ui.custom.css"></link>     
-    <link rel="stylesheet" type="text/css" media="screen" href="/avis9789979734/finalmudichurpanchayat/PHPGrid/lib/js/jqgrid/css/ui.jqgrid.css"></link>     
-    <link rel="stylesheet" type="text/css" href="../otherlinks.css" />
-    <script src="/avis9789979734/finalmudichurpanchayat/PHPGrid/lib/js/jquery.min.js" type="text/javascript"></script> 
-    <script src="/avis9789979734/finalmudichurpanchayat/PHPGrid/lib/js/jqgrid/js/i18n/grid.locale-en.js" type="text/javascript"></script> 
-    <script src="/avis9789979734/finalmudichurpanchayat/PHPGrid/lib/js/jqgrid/js/jquery.jqGrid.min.js" type="text/javascript"></script>     
-    <script src="/avis9789979734/finalmudichurpanchayat/PHPGrid/lib/js/themes/jquery-ui.custom.min.js" type="text/javascript"></script> 
+    <link rel="stylesheet" type="text/css" media="screen" href="/avis9789979734/finalmudichurpanchayat/lib/js/themes/redmond/jquery-ui.custom.css"></link>     
+    <link rel="stylesheet" type="text/css" media="screen" href="/avis9789979734/finalmudichurpanchayat/lib/js/jqgrid/css/ui.jqgrid.css"></link>     
+    <link rel="stylesheet" type="text/css" href="otherlinks.css" />
+    <script src="/avis9789979734/finalmudichurpanchayat/lib/js/jquery.min.js" type="text/javascript"></script> 
+    <script src="/avis9789979734/finalmudichurpanchayat/lib/js/jqgrid/js/i18n/grid.locale-en.js" type="text/javascript"></script> 
+    <script src="/avis9789979734/finalmudichurpanchayat/lib/js/jqgrid/js/jquery.jqGrid.min.js" type="text/javascript"></script>     
+    <script src="/avis9789979734/finalmudichurpanchayat/lib/js/themes/jquery-ui.custom.min.js" type="text/javascript"></script> 
 </head> 
 <body> 
 <section>
@@ -54,7 +54,7 @@ include '../header.php';
     </div> 
 	</section>
 	 <?php
-include '../footer.php';
+include 'footer.php';
 ?>
 </body> 
 </html> 

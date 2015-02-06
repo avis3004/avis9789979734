@@ -148,7 +148,7 @@
       if( $_SESSION["usertype"] == "Admin") { ?>
 			    <li><a href="#">ADMIN</a>
 								<ul>
-								  <li><a href="PHPGrid/PGrid.php">Complaints view</a></li>
+								  <li><a href="PGrid.php">Complaints view</a></li>
 						          <li><a href="edoc.php">Edit Documents</a></li>
                                 </li>
       <?php } }?>

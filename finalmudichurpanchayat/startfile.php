@@ -93,7 +93,7 @@ include 'MudichurPanchayat/database_connection.php';
                 <div class="bline">
                     <code><h1><center>NEWS</center></h1></code></div>
 				<?php
-				 $query=("SELECT newsContent FROM newsfeed ORDER BY newsDate DESC LIMIT 1");
+				 $query=("SELECT newsContent FROM newsfeed ORDER BY newsDate DESC LIMIT 15");
   $rs_news = mysql_query($query) or die("Query to get data from news table failed: " . mysql_error());
    
 				?>
@@ -103,9 +103,9 @@ include 'MudichurPanchayat/database_connection.php';
 					 echo '<table border="0" cellpadding="5">';
    					 while ($row = mysql_fetch_assoc($rs_news))
       				  {
-       					 echo '<tr>';
+       					 echo '<br><tr>';
         					foreach ($row as $column) {
-            				echo "<td>$column</td>";
+            				echo "<td>$column</td><br>";
        					 }
        						 echo '</tr>';
     	    echo '</table>';

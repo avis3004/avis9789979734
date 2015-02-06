@@ -1,5 +1,5 @@
 <?php
-//include 'form_header.php';
+include 'form_header.php';
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
@@ -8,6 +8,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Complaints Form</title>
 <link rel="stylesheet" type="text/css" href="view.css" media="all">
+<link rel="stylesheet" type="text/css" href="form_css" >
+
 <script type="text/javascript" src="view.js"></script>
 <script type="text/javascript" src="calendar.js"></script>
 </head>
@@ -171,6 +173,7 @@
 		</script>
 		<li id="li_6">
 		<label class="description" for="element_6">Date of Complaint </label>
+
 		<span>
 			<input id="element_6_1" name="element_6_1" class="element text" size="2" maxlength="2" value="" type="text"> /
 			<label for="element_6_1">DD</label>
@@ -183,7 +186,7 @@
 	 		<input id="element_6_3" name="element_6_3" class="element text" size="4" maxlength="4" value="" type="text">
 			<label for="element_6_3">YYYY</label>
 		</span>
-	
+	<div id=caldate>
 		<span id="calendar_6">
 			<img id="cal_img_6" class="datepicker" src="../MudichurPanchayat/calendar.gif" alt="Pick a date.">	
 		</span>
@@ -197,7 +200,7 @@
 			onSelect	 : selectEuropeDate
 			});
 		</script>
-		 
+		 <div id=caldate>
 		</li>		<li id="li_5" >
 		<label class="description" for="element_5">Complaint Description </label>		
 		<div>
