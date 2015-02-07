@@ -124,7 +124,7 @@
                             </ul></li>
                             <li><a href="">GALLERY</a>
                                 <ul>
-                                    <li><a href="">Photos</a></li>
+                                    <li><a href="imagegallery.php">Photos</a></li>
                                     <li><a href="">Videos</a></li>
                                 </ul>
                             </li>
