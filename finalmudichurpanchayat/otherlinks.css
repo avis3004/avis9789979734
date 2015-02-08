@@ -392,20 +392,24 @@ fieldset{
 .image-zoom-container {
 	list-style: none;
 	font-size: 0px;
+	
 }
 .zoom-container {
 	position: relative;
+	float:left;
 	overflow: hidden;
 	display: inline-block;
 	width: 33.33%;
 	font-size: 16px;
 	font-size: 1rem;
-	border: 1px solid #fff;
+	border: 5px solid #4169E1;
 	vertical-align: top;
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
-}
+	
+	 }
+.zoom-container span{ width:30%; margin:0 1%;  }
 .zoom-container img {
 	display: block;
 	width: 100%;
@@ -445,6 +449,7 @@ fieldset{
 	border-bottom: 5px solid rgba(255, 255, 255, .15);
 }
 .zoom-container:hover img {
+
 	-webkit-transform:scale(1.25); /* Safari and Chrome */
         -moz-transform:scale(1.25); /* Firefox */
         -ms-transform:scale(1.25); /* IE 9 */
@@ -454,7 +459,7 @@ fieldset{
 .zoom-container:hover .zoom-caption {
 	background: none;
 }
- 
+
 @media (max-width: 767px) {
 	.zoom-container {
 		width: 50%;

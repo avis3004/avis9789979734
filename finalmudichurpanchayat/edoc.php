@@ -1,16 +1,5 @@
 <?php
 include 'header.php';
-include 'MudichurPanchayat/database_connection.php';
-if ($_POST) {
-      
- $time_offset ="525"; // Change this to your time zone
-$time_a = ($time_offset * 120);
-$time = date("Y-m-d h:i:s",time() + $time_a); 
-$news=$_POST['message'];
- $query=("INSERT INTO panchayat.newsfeed (idnewsfeed, newsDate, newsContent)
-  VALUES (NULL, '$time', '$news');");
-  $rs_dnews = mysql_query($query) or die("Query to get data from news table failed: " . mysql_error());
-  }
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -32,7 +21,7 @@ $news=$_POST['message'];
   <tr>
     <td>
 	Insert the news inside the box:
-	<form action="<?php $_PHP_SELF ?>" method="post">
+	<form action="newsinsert.php" method="post">
 	<textarea name="message" rows="10" cols="30">
     </textarea>
     

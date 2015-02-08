@@ -2,7 +2,8 @@
 include_once("database_connection.php");
 session_start();
 $tbl_name="gallery";
-$uploadFilename= $_SESSION['FileName'];
+$uploadFilename= 'uploaded_files/'.basename( $_SESSION['FileName']).PHP_EOL;
+echo $uploadFilename;
 $UploadDate= date("d/m/y");
 //$UploadDate=now();
 //echo $UploadDate;

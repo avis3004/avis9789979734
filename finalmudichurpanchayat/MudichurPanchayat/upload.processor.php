@@ -67,6 +67,7 @@ while(file_exists($uploadFilename = $uploadsDirectory.$now.'-'.$_FILES[$fieldnam
 // If you got this far, everything has worked and the file has been successfully saved. 
 // We are now going to redirect the client to a success page. 
 $_SESSION["FileName"] = $uploadFilename;
+
 header('Location: ' . $uploadSuccess); 
 
 /*$result=mysql_query($sql);

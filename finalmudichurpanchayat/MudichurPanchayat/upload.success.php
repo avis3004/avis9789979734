@@ -2,7 +2,9 @@
 include_once("database_connection.php");
 session_start();
 $tbl_name="gallery";
-$uploadFilename= $_SESSION['FileName'];
+$uploadFilename= 'uploaded_files/'.basename( $_SESSION['FileName']).PHP_EOL;
+
+
 $UploadDate= date("d/m/y");
 //$UploadDate=now();
 //echo $UploadDate;
@@ -11,6 +13,7 @@ $sql = "INSERT INTO $tbl_name(UploadDate, FilePath)VALUES('$UploadDate','$upload
 $result=mysql_query($sql);
 if($result){
 echo "Successful";
+echo "uploadFilename";
 echo "<BR>";
 echo "<a href='/avis9789979734/finalmudichurpanchayat/startfile.php'>Back to main page</a>";
 }
@@ -32,7 +35,7 @@ echo "<a href='/avis9789979734/finalmudichurpanchayat/startfile.php'>Back to mai
     <body> 
         <div id="Upload"> 
             <h1>File upload</h1> 
-            <p>Congratulations! Your file upload was successful</p> 
+			<p>Congratulations! Your file upload was successful</p> 
         </div> 
      
     </body> 

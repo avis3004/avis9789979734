@@ -10,44 +10,39 @@ include 'header.php';
 	<section class="image">
 	    <div class="imghd">
 		<h1>IMAGE GALLERY</h1></div>
-        <div class="image-zoom-container">
-	<div class="zoom-container">
-		<a href="#">
-			<span class="zoom-caption">
-			</span>
-                    <img src="images/kanchipuram images/bannar1.jpg" />
-		</a>
-	</div>
-	<!--/.zoom-container-->
-	<div class="zoom-container">
-		<a href="#">
-			<span class="zoom-caption">
-			</span>
-                    <img src="images/kanchipuram images/kailasanathar_temple.jpg" />
-		</a>
-	</div>
-	<!--/.zoom-container-->
-	<div class="zoom-container">
-		<a href="#">
-			<span class="zoom-caption">
+		 
+		
+		 
+	<?php
+include 'MudichurPanchayat/database_connection.php';
+         $query=("SELECT FilePath FROM gallery ORDER BY UploadDate DESC LIMIT 5");
+  $rs_news = mysql_query($query) or die("Query to get data from gallery table failed: " . mysql_error());
+   $gal_result = mysql_query($query) or die('Error, query failed');
+ 
+     
+             while ($row = mysql_fetch_assoc($gal_result))
+                {
 				
-			</span>
-                    <img src="images/kanchipuram images/kanchi-kamakshi-temple-kanchipuram.jpg" />
-		</a>
-	</div>
-        <div class="zoom-container">
-		<a href="#">
-			<span class="zoom-caption">
+				 echo ' <div class="image-zoom-container">;';
+				  
+                 //echo '<br>';
+                  foreach ($row as $column) {
+			     
+				  echo '<div class="zoom-container">';
+		          echo '<a href="#">';
+				 
+                   // echo "<td>$column</td><br>";
+					 $filePath = $row['FilePath'];
+					// echo $filePath;
+					  echo '<img src="./' . $filePath . '" />';
+                 }
 				
-			</span>
-                    <img src="images/kanchipuram images/bannar7.jpg" />
-		</a>
-	</div>
-	<!--/.zoom-container-->
-	...
-</div>
-<!--/.image-zoom-container-->
-  </section>         
+             echo '</a>';
+			  echo '</div>';      
+      }   
+      ?>
+	
+          </section>         
 <?php 
         include 'footer.php';
         ?>
