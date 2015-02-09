@@ -33,8 +33,8 @@ function SendSMS($ContactNumber,$ComplaintDesc)
 {
 	
 // Declare variables.
-$Username = "vsivachitra@yahoo.com";
-$Password = "7sj5m";
+$Username = "ashok.jan31@gmail.com";
+$Password = "1t5zv";
 $MsgSender = "919789885126";
 $DestinationAddress = $ContactNumber;
 $Message = $ComplaintDesc;
