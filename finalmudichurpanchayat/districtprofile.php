@@ -6,6 +6,36 @@ include 'header.php';
             <link rel="stylesheet" href="dist/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="C:\wamp\www\avis9789979734\finalmudichurpanchayat\lib\js\jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+
+	// hide #back-top first
+	$("#back-top").hide();
+	
+	// fade in #back-top
+	$(function () {
+		$(window).scroll(function () {
+			if ($(this).scrollTop() > 100) {
+				$('#back-top').fadeIn();
+			} else {
+				$('#back-top').fadeOut();
+			}
+		});
+
+		// scroll body to 0px on click
+		$('#back-top a').click(function () {
+			$('body,html').animate({
+				scrollTop: 0
+			}, 800);
+			return false;
+		});
+	});
+
+});
+</script>
+
 <link rel="stylesheet" href="first.css">
 <script type="text/javascript">
 function cycleImages(){
@@ -33,6 +63,7 @@ setInterval('cycleImages()', 4000);
         
     </head>
     <body>
+	<div id="topbar"></div>
         <aside class="leftbar">
            
    <div id="cycler">
@@ -49,7 +80,8 @@ setInterval('cycleImages()', 4000);
         </aside>        
         <section class="content">
             <h1>KANCHIPURAM DISTRICT</h1>
-          
+			 <P><a href="#targetname">Your Link Text</a>
+         
                     <p>      Kanchipuram district is a district
                         in the northeast of the state of Tamil Nadu in India. It is bounded
                         in the west by Vellore District and Thiruvannamalai District,
@@ -84,7 +116,7 @@ setInterval('cycleImages()', 4000);
                         lie within the Chennai Metropolitan Area
                     </p>
                     <h3>ECONOMY</h3>
-                    <P>
+                   
                         Agriculture is the main occupation of the people with 47% of the population engaged in 
                         it. Paddy is the major crop cultivated in this district. Groundnuts, Sugarcane, Cereals & Millets and 
                         Pulses are the other major crops cultivated. 76.50 Metric Tonnes lands are cultivated in Fuel wood 
@@ -102,7 +134,7 @@ setInterval('cycleImages()', 4000);
                         are in Kancheepuram district, including those at Kunrathur, Erumaiyur, Nandampakkam, Sirukalathur,
                         Sikarayapuram, Kadaperi, Tiruneermalai, Ayyancheri, Kilambakkam and Nanmangalam.
                     </P>
-                    <P>
+                    <P> <a name="targetname">To check the link</a>
                       Kanchipuram is also one of the most industrialized districts in the country, thanks to its proximity
                       to the state capital Chennai. Areas surrounding Sriperumbudur have turned out to become one of the 
                       largest manufacturing hubs of India. The district is home to the manufacturing units of Hyundai,
@@ -114,7 +146,11 @@ setInterval('cycleImages()', 4000);
                     </P>
                     <p><a href=""></a></p>
                     <p class='plink' align='right'> <a href="http://www.kanchi.tn.nic.in/">For more information visit this page</a></p>
+					<p id="back-top">
+		<a href="#top"><span></span>Back to Top</a>
+	</p>
         </section>
+			
 <?php 
         include 'footer.php';
         ?>

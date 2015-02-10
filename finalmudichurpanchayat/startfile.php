@@ -97,7 +97,7 @@ include 'MudichurPanchayat/database_connection.php';
   $rs_news = mysql_query($query) or die("Query to get data from news table failed: " . mysql_error());
    
 				?>
-                <marquee style="font-family: Book Antiqua; color: #000000" bgcolor="#ffffff" direction="up"delay="10">
+                <marquee style="font-family: Book Antiqua; color: #000000" bgcolor="#ffffff" direction="up"delay="10"scrollamount="5" onmouseover="this.stop();"           onmouseout="this.start();">
                     <div class="marqueetext">   
 					<?php
 					 echo '<table border="0" cellpadding="5">';
@@ -105,6 +105,8 @@ include 'MudichurPanchayat/database_connection.php';
       				  {
        					 echo '<br><tr>';
         					foreach ($row as $column) {
+							
+							echo ' <img src="images/newicon.gif" width="35" height="20" alt="new">';
             				echo "<td>$column</td><br>";
        					 }
        						 echo '</tr>';

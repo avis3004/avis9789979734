@@ -15,7 +15,7 @@ include 'header.php';
 		 
 	<?php
 include 'MudichurPanchayat/database_connection.php';
-         $query=("SELECT FilePath FROM gallery ORDER BY UploadDate DESC LIMIT 5");
+         $query=("SELECT FilePath FROM gallery ORDER BY UploadDate DESC LIMIT 25");
   $rs_news = mysql_query($query) or die("Query to get data from gallery table failed: " . mysql_error());
    $gal_result = mysql_query($query) or die('Error, query failed');
  
