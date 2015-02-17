@@ -34,11 +34,16 @@ include 'MudichurPanchayat/database_connection.php';
 			<div id="slider_container_2">
 
 				<div id="SliderName_2" class="SliderName_2">
-					<img src="img/rsz_1.jpg" width="700" height="450" alt="Demo2 first" title="Demo2 first" />
-					<img src="img/rsz_2.jpg" width="700" height="450" alt="Demo2 second" title="Demo2 second" />
-					<img src="img/rsz_3.jpg" width="700" height="450" alt="Demo2 third" title="Demo2 third" />
-					<img src="img/rsz_4.jpg" width="700" height="450" alt="Demo2 fourth" title="Demo2 fourth" />
-     					<img src="img/rsz_5.jpg" width="700" height="450" alt="Demo2 fifth" title="Demo2.fifth" />
+					<img src="img/mudichur images/DSC_1215.jpg" width="700" height="450" alt="Demo2 first" title="Demo2 first" />
+					<img src="img/mudichur images/DSC00132.jpg" width="700" height="450" alt="Demo2 second" title="Demo2 second" />
+					<img src="img/mudichur images/scan0035.jpg" width="700" height="450" alt="Demo2 third" title="Demo2 third" />
+					<img src="img/mudichur images/DSC_0025.jpg" width="700" height="450" alt="Demo2 fourth" title="Demo2 fourth" />
+     				<img src="img/mudichur images/DSC_0540.jpg" width="700" height="450" alt="Demo2 fifth" title="Demo2.fifth" />
+                    <img src="img/mudichur images/DSC_0961.jpg" width="700" height="450" alt="Demo2 sixth" title="Demo2.sixth" />
+     				<img src="img/mudichur images/DSC_1645.jpg" width="700" height="450" alt="Demo2 seventh" title="Demo2.seventh" />
+     				<img src="img/mudichur images/DSC_4269.jpg" width="700" height="450" alt="Demo2 eight" title="Demo2.eight" />
+     				<img src="img/mudichur images/DSC03689.jpg" width="700" height="450" alt="Demo2 nineth" title="Demo2.nineth" />
+                   <img src="img/mudichur images/scan0052.jpg" width="700" height="450" alt="Demo2 tenth" title="Demo2.tenth" />
 
                                 </div>
 				<div class="c"></div>
@@ -46,7 +51,7 @@ include 'MudichurPanchayat/database_connection.php';
 				<div class="c"></div>
 
 				<script type="text/javascript">
-					effectsDemo2 = 'rain,stairs,fade';
+					effectsDemo2 = 'rain,stairs,fade,rain,stairs,fade,rain,stairs,fade';
 					var demoSlider_2 = Sliderman.slider({container: 'SliderName_2', width: 700, height: 450, effects: effectsDemo2,
 						display: {
 							autoplay: 3000,
@@ -97,7 +102,7 @@ include 'MudichurPanchayat/database_connection.php';
   $rs_news = mysql_query($query) or die("Query to get data from news table failed: " . mysql_error());
    
 				?>
-                <marquee style="font-family: Book Antiqua; color: #000000" bgcolor="#ffffff" direction="up"delay="10"scrollamount="5" onmouseover="this.stop();"           onmouseout="this.start();">
+                <marquee style="font-family: Book Antiqua; color: #000000" bgcolor="#ffffff" direction="up"delay="10"scrollamount="5" onMouseOver="this.stop();"           onmouseout="this.start();">
                     <div class="marqueetext">   
 					<?php
 					 echo '<table border="0" cellpadding="5">';
