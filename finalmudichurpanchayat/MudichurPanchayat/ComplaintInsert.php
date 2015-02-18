@@ -23,7 +23,8 @@ if($result){
 echo "Successful";
 echo "<BR>";
 echo "<a href='/avis9789979734/finalmudichurpanchayat/startfile.php'>Back to main page</a>";
-SendSMS($ContactNumber,$ComplaintDesc);
+//SendSMS($ContactNumber,$ComplaintDesc);
+SendSMSGateway();
 }
 
 else {
@@ -56,6 +57,20 @@ catch (Exception $e)
 	//Error occured while connecting to server.
 	$Message = $e->getMessage();
 }
+
+}
+function SendSMSGateway()
+{
+$url = "http://login.smsgatewayhub.com/smsapi/pushsms.aspx?user=ashok.jan31&pwd=505909&to=9789979734&sid=WEBSMS&msg=Complaint%20Registered%20Successfully%20for%20StreetLights&fl=0&gwid=2";
+echo $url;
+// create a new cURL resource
+$ch = curl_init();
+// set URL and other appropriate options
+curl_setopt($ch, CURLOPT_URL,$url);
+// grab URL and pass it to the browser
+curl_exec($ch);
+// close cURL resource, and free up system resources
+curl_close($ch);
 
 }
 ?> 
