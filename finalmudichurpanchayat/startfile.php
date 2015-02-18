@@ -121,6 +121,7 @@ include 'MudichurPanchayat/database_connection.php';
 			?>       
 				        </div>
               </marquee>
+              </div>
                             </div>
         </aside>
   <?php

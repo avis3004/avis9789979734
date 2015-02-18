@@ -111,7 +111,7 @@ aside {
 		 z-index:+1;
 		 }        
         .marqueetext{
-         
+                height: 400px;
 		        width: 400px;
         }
         .copyright{
