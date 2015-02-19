@@ -43,11 +43,11 @@ $(document).ready(function(){
    <article>
         <aside class="leftbar">
             <ul>
-                <a href="stategovern.php"><li>
-                    STATE GOVT SCHEMES
-            </li></a>
                 <a href="centralgovern.php"><li>
-                    CENTRAL GOVT SCHEMES
+                   CENTRAL GOVT SCHEMES
+            </li></a>
+                <a href="stategovern.php"><li>
+                     STATE GOVT SCHEMES
             </li></a>
                  <a href=""><li>
                     PANCHAYAT   
@@ -67,7 +67,7 @@ $(document).ready(function(){
 				  <a href="#csids"><li>Comprehensive School Infrastructure Development Scheme (CSIDS)</li></a>
 				  <a href="#mlacds"><li>Member of Legislative Assembly Constituency Development Scheme (MLACDS)</li></a>
 				  <a href="#rbmrs"><li>Rural Buildings Maintenance and Renovation Scheme (RBMRS)</li></a>
-				  <a href="#sss">Self Sufficiency Scheme (SSS)<li></li></a>
+				  <a href="#sss"><li>Self Sufficiency Scheme (SSS)</li></a>
 				  <a href="#ris"><li>Rural Infrastructure Scheme (RIS)</li></a>
 				  <a href="#women"><li>Renovation of Integrated Sanitary Complex for Women</li></a>
 				  <a href="#imsc"><li>Integrated Men Sanitary Complex (IMSC)</li></a>
@@ -426,6 +426,36 @@ Apart from THAI scheme, works have been dovetailed by utilizing funds of various
 
 
 
+</p></b>
+  <h2><a name="energy">Energisation of Street Lights with Solar Energy</a></h2>
+  <p><b>Energisation of Street Lights with Solar Power is a State funded scheme announced by the Hon&#146ble Chief Minister in the year 2011-12,</b> under which the existing street lights in the Village Panchayats will be replaced with solar powered street lights with an objective of reduction in the maintenance expenditure and promote the concept of renewable energy in rural areas.</p>
+  <p>
+            This programme is implemented in the Village Panchayats on an experimental basis.  Initially, 1 lakh street lights will be taken up in 1,000 Village Panchayats for replacement with solar power over a period of 5 years from 2011-12. The Government has sanctioned a sum of Rs.52.50 crore for energisation of 20,000 street lights with solar power in Village Panchayats for the year 2011-12.  Tamil Nadu Energy Development Agency (TEDA) is the Executing Agency.  15,020 street lights have been energised so far with solar power.  The balance will be completed before the end of March, 2013. </p>
+			<p>          The Government has issued orders for energisation of 20,000 street lights with solar power and also sanctioned Rs.52.83 crore for the year 2012-13.  The District Collectors have identified the locations, habitations and Village Panchayats where the street lights are to be energized with solar power and furnished the consolidated list to the Tamil Nadu Energy Development Agency. The TEDA has called for tender and the same will be finalized before the end of March, 2013 and the works </p>
+ 
+  <h2><a name="csids">
+Comprehensive School Infrastructure Development Scheme (CSIDS)
+</a></h2>
+<p>This Government has launched the  Comprehensive School Infrastructure Development Scheme (CSIDS) during 2011-12 with an objective of providing basic infrastructure facilities like New Buildings, Kitchen sheds, Water supply, Toilets, etc., in the Panchayat Union Primary and Middle Schools in rural areas.  Repairs and renovation of the existing facilities will also be taken up wherever necessary.</p>
+<p>New school buildings will be constructed with RCC roof with weathering course on the basis of the strength of the students.  The space available in the school premises will be used for the new construction and if adequate space is not available, a new floor will be added to the existing RCC Buildings after assessing the structural stability of the building.</p>
+<p>          New kitchen sheds will be taken up in those schools where kitchen sheds are not available and the existing damaged kitchen sheds will be taken up for repair and renovation.  Additional rooms/store rooms may also be constructed for stocking the commodities.</p>
+<p>          Existing water supply system in the schools which are in damaged condition will be taken up for repairs.  Extension of pipeline will be provided wherever necessary.  New water supply connection from the Panchayat or a new bore well will also be provided wherever necessary.</p>
+<p>          This Government shall ensure that all the Panchayat Union Schools have adequate toilet facilities for girl and boys.  Incinerators will be provided for the benefit of girl students.  If it is felt that funds under Total Sanitation Campaign are insufficient to meet the requirement of new toilets, the toilets can be taken up under the Comprehensive School Infrastructure Development Scheme also.  This scheme is being implemented in the Panchayat Union schools located in Town Panchayats and Grade III Municipalities also.</p>
+<p><b>          As a measure to protect the school environment clean and to make the students safe, compound wall construction was also allowed from 2012-13 onwards.</b></p>
+<p>          Committees have been constituted at the district level to take up a detailed assessment of need based on THAI survey for ascert</p>
+
+  <h2><a name=""></a></h2>
+  <h2><a name=""></a></h2>
+  <h2><a name=""></a></h2>
+  <h2><a name=""></a></h2>
+  <h2><a name=""></a></h2>
+  <h2><a name=""></a></h2>
+  <h2><a name=""></a></h2>
+  <h2><a name=""></a></h2>
+  <h2><a name=""></a></h2>
+  <h2><a name=""></a></h2>
+  <h2><a name=""></a></h2>
+  <h2><a name=""></a></h2>
 
 <p id="back-top">
 		<a href="#top"><span></span>Back to Top</a></p>
