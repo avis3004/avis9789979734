@@ -8,7 +8,7 @@ include 'MudichurPanchayat/database_connection.php';
         <meta charset="UTF-8">
         <link href="basic.css" rel="stylesheet"type="text/css">
         <link href="newcss.css" rel="stylesheet" type="text/css">
-		 <link href="otherlinks.css"rel="stylesheet"type="text/css"">
+		 <link href="otherlinks.css"rel="stylesheet"type="text/css">
          <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta http-equiv="imagetoolbar" content="no" />
 	
@@ -23,54 +23,45 @@ include 'MudichurPanchayat/database_connection.php';
         <!--login-->
         <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
         <!--/login-->
+		
+		<!--slideshow-->
+		
+<script type="text/javascript">
+function cycleImages(){
+      var $active = $('#cycler .active');
+      var $next = ($active.next().length > 0) ? $active.next() : $('#cycler img:first');
+      $next.css('z-index',2);//move the next image up the pile
+      $active.fadeOut(1500,function(){//fade out the top image
+	  $active.css('z-index',1).show().removeClass('active');//reset the z-index and unhide the image
+          $next.css('z-index',3).addClass('active');//make the next image the top one
+      });
+    }
+
+$(document).ready(function(){
+// run every 7s
+setInterval('cycleImages()', 1000);
+})
+</script>
+
+<!--slideshow-->
     </head>
     <body>
         
         <section class="slideshow">
             <div id="wrapper">
-
-		<div id="examples_outer">
-
-			<div id="slider_container_2">
-
-				<div id="SliderName_2" class="SliderName_2">
-					<img src="img/mudichur images/DSC_1215.jpg" width="700" height="450" alt="Demo2 first" title="Demo2 first" />
-					<img src="img/mudichur images/DSC00132.jpg" width="700" height="450" alt="Demo2 second" title="Demo2 second" />
-					<img src="img/mudichur images/scan0035.jpg" width="700" height="450" alt="Demo2 third" title="Demo2 third" />
-					<img src="img/mudichur images/DSC_0025.jpg" width="700" height="450" alt="Demo2 fourth" title="Demo2 fourth" />
-     				<img src="img/mudichur images/DSC_0540.jpg" width="700" height="450" alt="Demo2 fifth" title="Demo2.fifth" />
-                    <img src="img/mudichur images/DSC_0961.jpg" width="700" height="450" alt="Demo2 sixth" title="Demo2.sixth" />
-     				<img src="img/mudichur images/DSC_1645.jpg" width="700" height="450" alt="Demo2 seventh" title="Demo2.seventh" />
-     				<img src="img/mudichur images/DSC_4269.jpg" width="700" height="450" alt="Demo2 eight" title="Demo2.eight" />
-     				<img src="img/mudichur images/DSC03689.jpg" width="700" height="450" alt="Demo2 nineth" title="Demo2.nineth" />
-                   <img src="img/mudichur images/scan0052.jpg" width="700" height="450" alt="Demo2 tenth" title="Demo2.tenth" />
-
-                                </div>
-				<div class="c"></div>
-				<div id="SliderNameNavigation_2"></div>
-				<div class="c"></div>
-
-				<script type="text/javascript">
-					effectsDemo2 = 'rain,stairs,fade,rain,stairs,fade,rain,stairs,fade';
-					var demoSlider_2 = Sliderman.slider({container: 'SliderName_2', width: 700, height: 450, effects: effectsDemo2,
-						display: {
-							autoplay: 3000,
-							loading: {background: '#000000', opacity: 0.5, image: 'img/loading.gif'},
-							buttons: {hide: true, opacity: 1, prev: {className: 'SliderNamePrev_2', label: ''}, next: {className: 'SliderNameNext_2', label: ''}},
-							description: {hide: true, background: '#000000', opacity: 0.4, height: 50, position: 'bottom'},
-							navigation: {container: 'SliderNameNavigation_2', label: '<img src="img/clear.gif" />'}
-						}
-					});
-				</script>
-
-				
-			</div>
-			
-		</div>
-
-		
+<div id="cycler">
+                    <img class="active" src="img/mudichur images/DSC_1215.jpg" width="700" height="450" z-index="+1" />
+					<img src="img/mudichur images/DSC00132.jpg" width="700" height="450" z-index="+1" />
+					<img src="img/mudichur images/scan0035.jpg" width="700" height="450" z-index="+1" />
+					<img src="img/mudichur images/DSC_0025.jpg" width="700" height="450" z-index="+1" />
+     				<img src="img/mudichur images/DSC_0540.jpg" width="700" height="450" z-index="+1" />
+                    <img src="img/mudichur images/DSC_0961.jpg" width="700" height="450" z-index="+1"/>
+     				<img src="img/mudichur images/DSC_1645.jpg" width="700" height="450" z-index="+1"/>
+     				<img src="img/mudichur images/DSC_4269.jpg" width="700" height="450" z-index="+1" />
+     				<img src="img/mudichur images/DSC03689.jpg" width="700" height="450" z-index="+1" />
+                    <img src="img/mudichur images/scan0052.jpg" width="700" height="450" z-index="+1" />
+</div>		
 	</div>       
-
          </section>
        
             

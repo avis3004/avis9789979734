@@ -36,7 +36,7 @@ $(document).ready(function(){
 });
 </script>
 
-<link rel="stylesheet" href="first.css">
+
 <script type="text/javascript">
 function cycleImages(){
       var $active = $('#cycler .active');
