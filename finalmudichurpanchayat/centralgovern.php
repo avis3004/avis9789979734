@@ -230,11 +230,64 @@ This system effected from October, 2011 resulted in:
 <li>Detailed Project Report (DPR) will be prepared by reputed agency and this will be executed during 2013-14.</li>
 </ul>
 
+<p><b>1.3.7 Increase in Wages to the MGNREGS Workers</b></p>
+<ul type="circle">
+<li>The wages prescribed for 8 hours of work are disbursed based on the out-turn made by the workers. Prior to 15.05.2011, on many occasions, the beneficiaries got wages in the range of Rs.80/- to Rs.90/-. The Government conducted mass awareness campaigns adopting wide publicity measures like &#146Model pits&#146 in the worksite, awareness programmes to the workers on the  quantum of work to be done, training on pre-marking and measurement to Overseer, etc., to enable the workers to get more wages. Based on the awareness campaign, the average wage rate has increased from Rs.90/- to - Rs.105/-during 2012-13.</li>
+<li>Subsequent to the request for revision of Rural Schedule of Rate, a detailed time and motion study has been conducted in 13 districts for taking into account various types of soil.</li>
+<li>Based on the time motion study, a revised Rural Schedule of Rate(RSoR) has been issued vide G.O(Ms).No.110 RD&PR   (CGS-1) Department dated:15.11.2012.</li></ul>
+<p><b>1.4 Social Audit</b></p>
+<p><b>1.4.1 Pilot Social Audit</b></p>
+<li>Government of India has notified the &#148Mahatma Gandhi National Rural  Employment Guarantee Audit of Scheme Rules 2011&#148. </li>
+<li>As per rule 4(1) of MGNREGS Audit of Scheme Rules 2011, the State Government shall identify or establish under the Act, an independent organization for the conduct of Social Audit.</li>
+<li>20 State Level Resource Persons have undergone Social Audit training at NIRD, Hyderabad from 2.1.2012 to 6.1.2012.</li>
+<li>Kaniyambadi Block in Vellore District and Koliyanur Block in Villupuram District have been selected as pilot Blocks for conducting Social Audit.</li>
+<li>120 Village Level Resource Persons from Vellore and 220 Village Level Resource Persons from Villupuram have been given training from 16.2.2012 to 19.2.2012 for conducting the Social Audit.</li>
+<li>The Social Audit schedule in pilot Blocks have been drawn and Social Audit was conducted in 24 Village Panchayats of Kaniyambadi Block and 44 Village Panchayats of Koliyanur Block from 7.3.2012 to 20.03.2012.</li>
+<li>The details of findings have been uploaded in the GOI website.</li></ul>
+<p><b>1.4.2 Social Audit Society of Tamil Nadu (SASTA)</b></p>
+<ul>
+<li>An independent organization SASTA(Social Audit Society of Tamil Nadu) has been registered under the Tamil Nadu Societies Registration Act.</li>
+<li>As ordered vide G.O.(Ms).No.64 RD&PR (CGS-1) Department Dt.27.7.2012, the structural pattern of SASTA is as follows:</li></ul>
+<p><b>1.5  Payment of Wages through Banks</b></p>
 
+          <p>  It has been decided by this Government to dispense with the policy of the practice of disbursing the wages to the workers in cash. Accordingly, the wages to the beneficiaries will be disbursed through the Banks in a phased manner with the following objectives:</p>
+		  <ol type="i">
+<li>to curtail any scope for malpractices, and </li>
+<li>to separate the wage disbursement agency from implementing agency.</li></ol>
+<p>In this regard, following steps have been taken:</p>
+<ul>
+<li>Bank accounts have been opened for 82 lakh workers under the scheme.</li>
+<li>Payment of wages to the workers in 385 Village Panchayats at the rate of one Village Panchayat per Panchayat Union started on pilot basis.</li>
+<li>In Kancheepuram, Thiruvallur, Erode, Tiruppur and Kanniyakumari Districts payment is being made through Banks in all 1744 Village Panchayats covering 6.24 lakh workers.</li>
+<li>It is planned to implement payment of wages through Banks in the remaining 10,780 Village Panchayats of Tamil Nadu from 01.04.2013. This will cover nearly 31 lakh active workers initially.</li></ul>
+<p><b>Payment of wages through e-FMS</b></p>
+<ul>
+<li>e-FMS is a tool through which the wages will be credited to the individual workers account from a Central / Nodal point, payment of wages have been rolled out in Erode District in 2012-13.</li>
+<li>	During 2013-14, e-FMS will be operationalised in all Districts in a phased manner.
+Appointment of Banking Correspondents</li>
+<li>Payment of wages is successfully done through Banks only with the systemic arrangement for disbursal of wages by the Banks to the individual beneficiaries / workers.</li>
+<li>	Based on the request of Honourable Chief Minister, the State Level Bankers Committee (SLBC) has resolved to appoint Banking Correspondents in all 12524 Village Panchayats before 31.03.2013.</li>
+<li>	To have a better disbursal mechanism, SHG members and PLF representatives will be selected and appointed as Banking Correspondents.</li></ul>
+<p><b>1.6   Steps Taken to mitigate Drought  situation during the year 2012-13 </b></p>
+
+          <p>As per Hon&#146ble Chief Minister&#146s announcement, the entire state of Tamil Nadu has been declared as Drought affected vide Tamil Nadu Government Gazette Notification No.45, Revenue Dept., Dated 20.02.2013 to be read with G.O.(Ms).No.48, Revenue(DM-3.1) Dept., dated 13.02.2013. Accordingly,</p>
+ 
+          <p>   In all the 31 districts which have been drought affected, the present entitlement of 100 days under Mahatma Gandhi National Rural Employment Guarantee Scheme has been enhanced to 150 days from 21.2.2013 for the financial year    2012-13.</p>
+		  <ul>
+<li>	Under the Scheme, 15,000 Farm Ponds at an estimated cost of Rs.181 crore have been taken up in the eight Delta Districts of Thanjavur, Pudukottai, Tiruchirapalli, Karur, Ariyalur, Nagapattinam, Cuddalore and Tiruvarur.</li>
+<li>	Apart from this, works at a cost of Rs.1336 crores to benefit agricultural labourers of the delta regions are taken up.</li>
+<li>	Thus, the aim has been to provide additional employment to 20.24 lakh households of agricultural labourers in the Delta Districts and 3.34 lakh households of 26 other Districts who have completed 100 days.</li>
+<li>	For the provision of Employment to the projected households who have completed 100 days and to those households who have not yet completed 100 days, additional works have been commenced in all the Districts.</li>
+<li>	Progress made so far:</li>
+<ul type="disc">
+<li>	As on 20.03.2013, nearly 9,66,428 no. of workers from 8,50,984 households who have completed 100 days of work have participated in MGNREGS works.</li>
+<li>	As on 20.03.2013, nearly 14,010 no. of farm ponds have been sanctioned and 1,100 no. of works commenced on the field in the eight Delta Districts.</li>
+<li>	After declaration of Drought as on 20.03.2013, nearly 1,575 no. of works have been commenced and completed with an expenditure of Rs.86 Crores. 26,518 no. of works to the tune of Rs.648.64 Crores are ongoing in the field. Thus, totally 28,093 works to the tune of Rs.734.65 Crores have been taken up to mitigate the drought in the Eight Delta Districts.</li>
+</ul>
 
 		  
 
-<b>    1.7 Proposed New initiatives in 2013-14</b>
+<p><b>    1.7 Proposed New initiatives in 2013-14</b></p>
 <ul>
 <li>The MGNREG Scheme will be implemented with the target for generating 42.85 crore mandays during 2013-14 with an approved Labour Budget of Rs.6341.80 crore.</li>
 <li>The following new initiatives will be done during the implementation in 2013-14:</li>
