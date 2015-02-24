@@ -246,7 +246,7 @@ include 'form_header.php';
 <!--
 	function check_length(my_form)
 	{
-		maxLen = 230; // max number of characters allowed
+		maxLen = 30; // max number of characters allowed
 		if (my_form.element_5.value.length >= maxLen) {
 			// Alert message if maximum limit is reached. 
 			// If required Alert can be removed. 
