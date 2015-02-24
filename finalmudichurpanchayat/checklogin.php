@@ -21,7 +21,7 @@ $myusername = stripslashes($myusername);
 $mypassword = stripslashes($mypassword);
 $myusername = mysql_real_escape_string($myusername);
 $mypassword = mysql_real_escape_string($mypassword);
-$sql="SELECT FirstName,UserType FROM $tbl_name WHERE username='$myusername' and password='$mypassword'";
+$sql="SELECT FirstName,UserType,Username FROM $tbl_name WHERE username='$myusername' and password='$mypassword'";
 $result=mysql_query($sql);
 
 // Mysql_num_row is counting table row
@@ -32,7 +32,8 @@ if($count==1){
   $row = mysql_fetch_assoc($result);
   $_SESSION["usertype"] = $row["UserType"]; 
   $_SESSION["username"] = $row["FirstName"];
-  //echo $_SESSION["usertype"];
+  $_SESSION["Uid"] = $row["Username"];
+  echo $row[Username];
 // Register $myusername, $mypassword and redirect to file "login_success.php"
 
  header("location:startfile.php");

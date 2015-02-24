@@ -1,8 +1,9 @@
 <?php
 include_once("database_connection.php");
 include_once("ViaNettSMS.php");
-
+session_start();
 $tbl_name="complaints"; // Table name 
+
 // Get values from form 
 $ComplaintType =$_POST['element_1'];
 $ComplaintDateDD =$_POST['element_6_1'];
@@ -13,64 +14,45 @@ $ContactPersonName = $_POST['element_3_1'];
 $ContactNumber = $_POST['element_4'];
 $WardNumber = $_POST['WardElement'];
 $StreetName = $_POST['StreetName'];
-
+$LoggedinUser= $_SESSION["Uid"];
+//echo $LoggedinUser;
 $sql="INSERT INTO $tbl_name(ComplaintType, ComplaintDateDD, ComplaintDateMM, ComplaintDateYYYY, ComplaintDesc, ContactPersonName,ContactNumber,WardNumber,StreetName)VALUES('$ComplaintType','$ComplaintDateDD','$ComplaintDateMM','$ComplaintDateYYYY','$ComplaintDesc','$ContactPersonName','$ContactNumber','$WardNumber','$StreetName')";
-//echo $sql;
+$SelectQuery="SELECT Phone FROM registration where Username='$LoggedinUser'";
 $result=mysql_query($sql);
-
+$SelectResult = mysql_query($SelectQuery);
+$count=mysql_num_rows($SelectResult);
+if($count==1){
+  $row = mysql_fetch_assoc($SelectResult);
+  $UserPhoneNo = $row['Phone'];
+}
 // if successfully insert data into database, displays message "Successful". 
 if($result){
-echo "Successful";
+//echo "Successful";
 echo "<BR>";
 echo "<a href='/avis9789979734/finalmudichurpanchayat/startfile.php'>Back to main page</a>";
 //SendSMS($ContactNumber,$ComplaintDesc);
-SendSMSGateway();
+SendSMSGateway($ContactNumber,$ComplaintDesc,$UserPhoneNo);
 }
 
 else {
 echo "ERROR";
 }
-function SendSMS($ContactNumber,$ComplaintDesc)
+function SendSMSGateway($ContactNumber,$ComplaintDesc,$UserPhoneNo)
 {
-	
-// Declare variables.
-$Username = "ashok.jan31@gmail.com";
-$Password = "1t5zv";
-$MsgSender = "919789885126";
-$DestinationAddress = $ContactNumber;
-$Message = $ComplaintDesc;
-
-// Create ViaNettSMS object with params $Username and $Password
-$ViaNettSMS = new ViaNettSMS($Username, $Password);
-try
-{
-	// Send SMS through the HTTP API
-	$Result = $ViaNettSMS->SendSMS($MsgSender, $DestinationAddress, $Message);
-	// Check result object returned and give response to end user according to success or not.
-	if ($Result->Success == true)
-		$Message = "Message successfully sent!";
-	else
-		$Message = "Error occured while sending SMS<br />Errorcode: " . $Result->ErrorCode . "<br />Errormessage: " . $Result->ErrorMessage;
-}
-catch (Exception $e)
-{
-	//Error occured while connecting to server.
-	$Message = $e->getMessage();
-}
-
-}
-function SendSMSGateway()
-{
-$url = "http://login.smsgatewayhub.com/smsapi/pushsms.aspx?user=ashok.jan31&pwd=505909&to=9043228888&sid=WEBSMS&msg=Complaint%20Registered%20Successfully%20for%20StreetLights&fl=0&gwid=2";
+//$url = "http://login.smsgatewayhub.com/smsapi/pushsms.aspx?user=ashok.jan31&pwd=505909&to=9043228888&sid=WEBSMS&msg=Complaint%20Registered%20Successfully%20for%20StreetLights&fl=0&gwid=2";
+$SanitizedMsg = trim(str_replace('','%20',$ComplaintDesc));
+$url = "http://login.smsgatewayhub.com/smsapi/pushsms.aspx?user=ashok.jan31&pwd=505909&to=$ContactNumber,$UserPhoneNo&sid=WEBSMS&msg=$SanitizedMsg&fl=0&gwid=2";
 echo $url;
-// create a new cURL resource
+
+//SMS Code Comented to avoid triggering of SMS in production
+/*
 $ch = curl_init();
 // set URL and other appropriate options
 curl_setopt($ch, CURLOPT_URL,$url);
 // grab URL and pass it to the browser
 curl_exec($ch);
 // close cURL resource, and free up system resources
-curl_close($ch);
+curl_close($ch);*/
 
 }
 ?> 
