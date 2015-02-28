@@ -5,15 +5,17 @@ $tbl_name="gallery";
 $uploadFilename= 'uploaded_files/'.basename( $_SESSION['FileName']).PHP_EOL;
 echo $uploadFilename;
 $UploadDate= date("d/m/y");
+//$fileType=$_GET['gtype'];
+echo $gtype;
 //$UploadDate=now();
 //echo $UploadDate;
-$sql = "INSERT INTO $tbl_name(UploadDate, FilePath)VALUES('$UploadDate','$uploadFilename')";
+$sql = "INSERT INTO $tbl_name(UploadDate, FilePath, scheme_type)VALUES('$UploadDate','$uploadFilename','$fileType')";
 
 $result=mysql_query($sql);
 if($result){
 echo "Successful";
 echo "<BR>";
-echo "<a href='/avis9789979734/finalmudichurpanchayat/startfile.php'>Back to main page</a>";
+echo "<a href='/avis9789979734/finalmudichurpanchayat/imagegallery.php'>Back to main page</a>";
 }
 // filename: upload.success.php 
 //include 'upload.processor.php';
