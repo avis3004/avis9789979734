@@ -175,7 +175,14 @@ width:85%;
          background-color: #083a77;
          color: #ffffff;
         }
-
+.gline{
+         position: absolute;
+         width: 1172px;
+         height: 65px;
+         background-color:#cc9900;
+         color: #083a77;
+		 font-family:Verdana, Arial, Helvetica, sans-serif;
+        }
                   
            footer{
                  position: relative;

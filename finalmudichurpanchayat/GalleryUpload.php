@@ -1,4 +1,11 @@
 <?php 
+//session_start();
+//if(isset($_POST['submit'])){
+///$selected_val = $_POST['gtype'];  // Storing Selected Value In Variable  // Displaying Selected Value
+
+//$_SESSION['gtype'] =$selected_val;
+//echo $_SESSION['gtype'];
+//}
 
 // filename: upload.form.php 
 
@@ -31,19 +38,16 @@ $max_file_size = 4194304; // size in bytes
      
     <form id="Upload" action="<?php echo $uploadHandler ?>" enctype="multipart/form-data" method="post"> 
      
-        <h1> 
-            Gallery upload 
-			        </h1> 
          
         <p> 
             <input type="hidden" name="MAX_FILE_SIZE" value="<?php echo $max_file_size ?>"> 
         </p> 
 		<p>
-		<label for="gtype">Select your scheme:</label>
-		<select id="gtype" name="gtype">
-  <option value="a">Scheme A</option>
-  <option value="b">Scheme B</option>
-  <option value="c">Scheme C</option>
+		<label for="gtype1">Select your scheme:</label>
+		<select name="gtype">
+  <option value="A">Scheme A</option>
+  <option value="B">Scheme B</option>
+  <option value="C">Scheme C</option>
   </select> 
  		</p>
          
@@ -56,16 +60,12 @@ $max_file_size = 4194304; // size in bytes
         <p> 
             <label for="submit">Press to...</label> 
             <input id="submit" type="submit" name="submit" value="Upload me!"> 
-        </p> 
-  <?php
-  if(isset($_POST['submit'])){
-
-  $selected_val = $_POST['gtype'];
-   echo $selected_val;
-} ?>
-    
+     </p>
     </form> 
-          
+         
+         <div>
+ 
+   ?>   </div>
     </body> 
 
 </html

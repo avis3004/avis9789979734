@@ -26,7 +26,6 @@ $result=mysql_query($sql);
 
 // Mysql_num_row is counting table row
 $count=mysql_num_rows($result);
-
 // If result matched $myusername and $mypassword, table row must be 1 row
 if($count==1){
   $row = mysql_fetch_assoc($result);
@@ -39,46 +38,10 @@ if($count==1){
  header("location:startfile.php");
 }
 else {
-?>
-<!doctype html>
-<html lang="en">
-   <head>
-      <meta charset="utf-8">
-      <title>loginfailure</title>
-      <link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
-      <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
-      <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
-      <!-- CSS -->
-      <style>
-         .ui-widget-header,.ui-state-default, ui-button{
-            background:#b9cd6d;
-            border: 1px solid #b9cd6d;
-            color: #FFFFFF;
-            font-weight: bold;
-         }
-      </style>
-      <!-- Javascript -->
-      <script>
-         $(function() {
-            $( "#dialog-3" ).dialog({
-               autoOpen: false, 
-               hide: "puff",
-               show : "slide",
-               height: 200      
-            });
-            $( "#opener-3" ).click(function() {
-               $( "#dialog-3" ).dialog( "open" );
-            });
-         });
-      </script>
-   </head>
-   <body>
-      <!-- HTML --> 
-      <div id="dialog-3" title="Dialog Title goes here...">This my first jQuery UI Dialog!</div>
-     
-   </body>
-</html>
-<?php
+echo "<script>
+alert('wrong username or password!!');
+window.location.href='startfile.php';
+</script>"; 
 }
 ob_end_flush();
 ?>

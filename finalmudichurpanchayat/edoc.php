@@ -12,22 +12,24 @@ include 'header.php';
 <body>
 
 <section>
-<table width="1172" border="1">
+ <div class="gline">
+                    <code><h1><center>UPLOAD YOUR FILES HERE</center></h1></code></div>
+<table width="1172" border="0">
   <tr>
-    <td height="110" colspan="2">
+    <td height="60" colspan="2">
 	
-	<div>
-		<center		<h1>UPLOAD YOUR FILES HERE...</h1></center>
-		
-                 </div>       </td>
+	 </td>
   </tr>
   <tr>
-    <td>
+    <td bgcolor="#CCCCCC">
+    <h2> <center>Gallery upload <img src="images/upload.png" width="90" height="95" /></center></h2> 
+        <center>
 	<?php
 			include 'GalleryUpload.php';
-			?></td>
-    <td>
-	Insert the news inside the box:
+			?>
+            </center></td>
+    <td bgcolor="#CCCCCC">
+	<h3>INSERT NEWSFEED</h3>
 	<form action="newsinsert.php" method="post">
 	<textarea name="message" rows="10" cols="30">
     </textarea>

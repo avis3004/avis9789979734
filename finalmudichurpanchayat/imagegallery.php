@@ -16,7 +16,7 @@ include 'header.php';
 		 
 	<?php
 include 'MudichurPanchayat/database_connection.php';
-         $query=("SELECT FilePath FROM gallery WHERE scheme_type = 'A'");
+         $query=("SELECT FilePath FROM gallery WHERE scheme_type = 'gtype'");
   $rs_news = mysql_query($query) or die("Query to get data from gallery table failed: " . mysql_error());
    $gal_result = mysql_query($query) or die('Error, query failed');
  

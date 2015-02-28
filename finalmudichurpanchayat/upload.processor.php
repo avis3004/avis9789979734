@@ -24,7 +24,6 @@ $uploadSuccess = 'http://' . $_SERVER['HTTP_HOST'] . $directory_self . 'upload.s
 
 // fieldname used within the file <input> of the HTML form 
 $fieldname = 'file'; 
-$schemetype='gtype';
 
 // Now let's deal with the upload 
 
@@ -68,7 +67,6 @@ while(file_exists($uploadFilename = $uploadsDirectory.$now.'-'.$_FILES[$fieldnam
 // If you got this far, everything has worked and the file has been successfully saved. 
 // We are now going to redirect the client to a success page. 
 $_SESSION["FileName"] = $uploadFilename;
-$_SESSION["gtype"]=$schemetype;
 header('Location: ' . $uploadSuccess); 
 
 /*$result=mysql_query($sql);

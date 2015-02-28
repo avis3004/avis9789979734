@@ -93,7 +93,7 @@ setInterval('cycleImages()', 1000);
   $rs_news = mysql_query($query) or die("Query to get data from news table failed: " . mysql_error());
    
 				?>
-                <marquee style="font-family: Book Antiqua; color: #000000" bgcolor="#ffffff" direction="up"delay="10"scrollamount="5" onMouseOver="this.stop();"           onmouseout="this.start();">
+                <marquee style="font-family: Book Antiqua; color: #000000" bgcolor="#ffffff" direction="up"delay="5"scrollamount="10" onMouseOver="this.stop();"           onmouseout="this.start();">
                     <div class="marqueetext">   
 					<?php
 					 echo '<table border="0" cellpadding="5">';
