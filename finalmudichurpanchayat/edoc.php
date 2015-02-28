@@ -6,6 +6,8 @@ include 'header.php';
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <title>Upload form</title>
+        <link href="otherlinks.css" rel="stylesheet"type="text/css">
+
 </head>
 <body>
 
@@ -13,6 +15,7 @@ include 'header.php';
 <table width="1172" border="1">
   <tr>
     <td height="110" colspan="2">
+	
 	<div>
 		<center		<h1>UPLOAD YOUR FILES HERE...</h1></center>
 		
@@ -20,17 +23,17 @@ include 'header.php';
   </tr>
   <tr>
     <td>
+	<?php
+			include 'GalleryUpload.php';
+			?></td>
+    <td>
 	Insert the news inside the box:
 	<form action="newsinsert.php" method="post">
 	<textarea name="message" rows="10" cols="30">
     </textarea>
-    
-	<input type="submit" />
+   	<input type="submit" />
 	</form></td>
-    <td>
-	<?php
-			include 'GalleryUpload.php';
-			?></td>
+  
   </tr>
 </table>
 

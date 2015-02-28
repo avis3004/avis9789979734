@@ -80,22 +80,10 @@ echo "<a href='/avis9789979734/finalmudichurpanchayat/startfile.php'>Back to mai
 function error($error, $location, $seconds = 5) 
 { 
     //header("Refresh: $seconds; URL="$location""); 
-    echo '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"'."n". 
-    '"http://www.w3.org/TR/html4/strict.dtd">'."nn". 
-    '<html lang="en">'."n". 
-    '    <head>'."n". 
-    '        <meta http-equiv="content-type" content="text/html; charset=iso-8859-1">'."nn". 
-    '        <link rel="stylesheet" type="text/css" href="stylesheet.css">'."nn". 
-    '    <title>Upload error</title>'."nn". 
-    '    </head>'."nn". 
-    '    <body>'."nn". 
-    '    <div id="Upload">'."nn". 
-    '        <h1>Upload failure</h1>'."nn". 
-    '        <p>An error has occurred: '."nn". 
-    '        <span class="red">' . $error . '...</span>'."nn". 
-    '         The upload form is reloading</p>'."nn". 
-    '     </div>'."nn". 
-    '</html>'; 
+echo "<script>
+alert('Upload failure, please upload a valid file');
+window.location.href='edoc.php';
+</script>"; 
     exit; 
 } // end error handler 
 

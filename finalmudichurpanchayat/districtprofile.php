@@ -80,9 +80,8 @@ setInterval('cycleImages()', 4000);
         </aside>        
         <section class="content">
             <h1>KANCHIPURAM DISTRICT</h1>
-			 <P><a href="#targetname">Your Link Text</a>
-         
-                    <p>      Kanchipuram district is a district
+       
+                    <p align="justify">      Kanchipuram district is a district
                         in the northeast of the state of Tamil Nadu in India. It is bounded
                         in the west by Vellore District and Thiruvannamalai District,
                         in the north by Tiruvallur District and Chennai District, 
@@ -98,7 +97,7 @@ setInterval('cycleImages()', 4000);
                             <img src="images/kanchipuram images/kanchi map.jpg"height="300px"width="300px"></center>
             </div>
                     <h3>GOVERNANCE</h3>
-                    <p>
+                    <p align="justify">
                         Kanchipuram, the temple town, is the district headquarters. For administrative purpose, 
                         the district has been divided into 4 revenue divisions consisting of 12 taluks with 1,214
                         revenue villages. For development purpose, it is divided into 13 development blocks with 
@@ -111,30 +110,30 @@ setInterval('cycleImages()', 4000);
                         <li>Kanchipuram Revenue Division: Sriperumbudur taluk, Walajabad taluk, Kanchipuram taluk</li>
                         <li>Madurantakam Revenue Division: Uthiramerur taluk, Madurantakam taluk, Cheyyur taluk</li>
                     </ul>
-                    <p>
+                    <p align="justify">
                         Alandur, Chengalpattu, Kanchipuram, Sholinganallur, Sriperumbudur and Tambaram taluks 
                         lie within the Chennai Metropolitan Area
                     </p>
                     <h3>ECONOMY</h3>
-                   
+                     <P align="justify">
                         Agriculture is the main occupation of the people with 47% of the population engaged in 
                         it. Paddy is the major crop cultivated in this district. Groundnuts, Sugarcane, Cereals & Millets and 
                         Pulses are the other major crops cultivated. 76.50 Metric Tonnes lands are cultivated in Fuel wood 
                         and 8.039 Tonnes in Cashew. Palar river along with Tanks and wells are the main sources of 
                         irrigation in this district.
                     </P>
-                    <P>
+                    <P align="justify">
                         Kancheepuram is also known as 'Silk City' and 'Temple City', since one of the main professions
                         of the people living in and around is weaving silk sarees. The silk weavers of Kanchi settled more
                         than 400 years ago and have given it an enviable reputation as the producer of the best silk sarees 
                         in the country.
                     </P>
-                    <P>
+                    <P align="justify">
                         More than 70 percent of the 163 notified areas (megalithic sites) in the state of Tamil Nadu
                         are in Kancheepuram district, including those at Kunrathur, Erumaiyur, Nandampakkam, Sirukalathur,
                         Sikarayapuram, Kadaperi, Tiruneermalai, Ayyancheri, Kilambakkam and Nanmangalam.
                     </P>
-                    <P> <a name="targetname">To check the link</a>
+					  <P align="justify">
                       Kanchipuram is also one of the most industrialized districts in the country, thanks to its proximity
                       to the state capital Chennai. Areas surrounding Sriperumbudur have turned out to become one of the 
                       largest manufacturing hubs of India. The district is home to the manufacturing units of Hyundai,
