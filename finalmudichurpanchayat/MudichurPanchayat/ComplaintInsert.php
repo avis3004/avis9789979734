@@ -45,14 +45,14 @@ $url = "http://login.smsgatewayhub.com/smsapi/pushsms.aspx?user=ashok.jan31&pwd=
 echo $url;
 
 //SMS Code Comented to avoid triggering of SMS in production
-/*
+
 $ch = curl_init();
 // set URL and other appropriate options
 curl_setopt($ch, CURLOPT_URL,$url);
 // grab URL and pass it to the browser
 curl_exec($ch);
 // close cURL resource, and free up system resources
-curl_close($ch);*/
+curl_close($ch);
 
 }
 ?> 
