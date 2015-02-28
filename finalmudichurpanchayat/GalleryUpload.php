@@ -1,11 +1,4 @@
 <?php 
-//session_start();
-//if(isset($_POST['submit'])){
-///$selected_val = $_POST['gtype'];  // Storing Selected Value In Variable  // Displaying Selected Value
-
-//$_SESSION['gtype'] =$selected_val;
-//echo $_SESSION['gtype'];
-//}
 
 // filename: upload.form.php 
 
@@ -62,10 +55,19 @@ $max_file_size = 4194304; // size in bytes
             <input id="submit" type="submit" name="submit" value="Upload me!"> 
      </p>
     </form> 
+    <?php
+     //session_start();
+     if(isset($_POST['submit'])){
+     $selected_val = $_POST['gtype'];  // Storing Selected Value In Variable  // Displaying Selected Value
+ 
+     $_SESSION['gtype'] =$selected_val;
+     echo $_SESSION['gtype'];
+
+    }?>
          
          <div>
  
-   ?>   </div>
+    </div>
     </body> 
 
 </html
