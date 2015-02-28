@@ -2,6 +2,9 @@
 
 session_start();
 
+    $selected_val = $_POST['gtype'];  // Storing  
+    $_SESSION['gtype'] =$selected_val;
+
 //global $uploadFilename;
 
 //$UploadDate= date("d/m/y");

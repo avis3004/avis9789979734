@@ -4,13 +4,13 @@ session_start();
 $tbl_name="gallery";
 $uploadFilename= 'uploaded_files/'.basename( $_SESSION['FileName']).PHP_EOL;
 //echo $uploadFilename;
-//$fileType=$_SESSION['gtype'];
+$fileType=$_SESSION['gtype'];
 $UploadDate= date("d/m/y");
 //echo $fileType;
 //echo $gtype;
 //$UploadDate=now();
 //echo $UploadDate;
-$sql = "INSERT INTO $tbl_name(UploadDate, FilePath)VALUES('$UploadDate','$uploadFilename')";
+$sql = "INSERT INTO $tbl_name(UploadDate, FilePath,scheme_type)VALUES('$UploadDate','$uploadFilename','$fileType')";
 
 $result=mysql_query($sql);
 if($result){

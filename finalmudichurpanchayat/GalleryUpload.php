@@ -36,12 +36,13 @@ $max_file_size = 4194304; // size in bytes
             <input type="hidden" name="MAX_FILE_SIZE" value="<?php echo $max_file_size ?>"> 
         </p> 
 		<p>
+        
 		<label for="gtype1">Select your scheme:</label>
-		<select name="gtype">
-  <option value="A">Scheme A</option>
-  <option value="B">Scheme B</option>
-  <option value="C">Scheme C</option>
-  </select> 
+		 <select name="gtype">
+         <option value="A">Scheme A</option>
+         <option value="B">Scheme B</option>
+         <option value="C">Scheme C</option>
+        </select> 
  		</p>
          
         <p> 
@@ -54,16 +55,9 @@ $max_file_size = 4194304; // size in bytes
             <label for="submit">Press to...</label> 
             <input id="submit" type="submit" name="submit" value="Upload me!"> 
      </p>
-    </form> 
-    <?php
-     //session_start();
-     if(isset($_POST['submit'])){
-     $selected_val = $_POST['gtype'];  // Storing Selected Value In Variable  // Displaying Selected Value
  
-     $_SESSION['gtype'] =$selected_val;
-     echo $_SESSION['gtype'];
-
-    }?>
+    </form> 
+         
          
          <div>
  
