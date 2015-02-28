@@ -93,7 +93,8 @@ setInterval('cycleImages()', 1000);
   $rs_news = mysql_query($query) or die("Query to get data from news table failed: " . mysql_error());
    
 				?>
-                <marquee style="font-family: Book Antiqua; color: #000000" bgcolor="#ffffff" direction="up"delay="5"scrollamount="10" onMouseOver="this.stop();"           onmouseout="this.start();">
+                <marquee style="font-family: Book Antiqua; color: #000000" bgcolor="#ffffff" direction="up"delay="5"scrollamount="10" onMouseOver="this.stop();" 
+				onmouseout="this.start();">
                     <div class="marqueetext">   
 					<?php
 					 echo '<table border="0" cellpadding="5">';
@@ -112,8 +113,24 @@ setInterval('cycleImages()', 1000);
 			?>       
 				        </div>
               </marquee>
-              </div>
-                            </div>
+              </div> </div>
+
+
+
+                <div class="sidebar2">
+                <div class="bline"><code><h1><center>Advertisement corner</center></h1></code></div>
+			       <div class="adv">
+				        <div id="cycler">
+       <img class="active" src="images/kanchipuram images/kailasanathar_temple.jpg"height="300px"width="400px"z-index="+1"  />
+       <img src="images/kanchipuram images/bannar1.jpg" height="300px"width="400px" z-index="+1"/>	
+       		
+       <img src="images/kanchipuram images/bannar7.jpg" height="300px"width="400px"  z-index="+1"/>		
+       <img src="images/kanchipuram images/kanchi-kamakshi-temple-kanchipuram.jpg" height="300px"width="400px"z-index="+1"  />		
+
+</div>
+             </div>
+              </div>						
+							
         </aside>
   <?php
         include 'footer.php';
