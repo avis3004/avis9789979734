@@ -34,7 +34,9 @@ if($count==1){
   $_SESSION["Uid"] = $row["Username"];
   echo $row[Username];
 // Register $myusername, $mypassword and redirect to file "login_success.php"
-
+  $_SESSION['start'] = time(); // Taking now logged in time.
+            // Ending a session in 30 minutes from the starting time.
+  $_SESSION['expire'] = $_SESSION['start'] + (15*60);
  header("location:startfile.php");
 }
 else {
