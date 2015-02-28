@@ -32,17 +32,26 @@ $max_file_size = 4194304; // size in bytes
     <form id="Upload" action="<?php echo $uploadHandler ?>" enctype="multipart/form-data" method="post"> 
      
         <h1> 
-            Upload form 
-        </h1> 
+            Gallery upload 
+			        </h1> 
          
         <p> 
             <input type="hidden" name="MAX_FILE_SIZE" value="<?php echo $max_file_size ?>"> 
         </p> 
+		<p>
+		<label for="type">Select your scheme:</label>
+		<select id="type">
+  <option value="a">Scheme A</option>
+  <option value="b">Scheme B</option>
+  <option value="c">Scheme C</option>
+  </select> 
+		</p>
          
         <p> 
             <label for="file">File to upload:</label> 
             <input id="file" type="file" name="file"> 
         </p> 
+		
                  
         <p> 
             <label for="submit">Press to...</label> 

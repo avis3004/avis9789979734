@@ -10,7 +10,7 @@ include 'header.php';
 	<section class="image">
 	    <div class="imghd">
 		<h1>IMAGE GALLERY</h1></div>
-		 
+		 <h2>Images on scheme 1</h2>
 		
 		 
 	<?php
