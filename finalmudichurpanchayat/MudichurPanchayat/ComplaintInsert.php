@@ -10,12 +10,14 @@ $ComplaintDateDD =$_POST['element_6_1'];
 $ComplaintDateMM =$_POST['element_6_2'];
 $ComplaintDateYYYY =$_POST['element_6_3'];
 $ComplaintDesc = $_POST['element_5'];
-$ContactPersonName = $_POST['element_3_1'];
 $ContactNumber = $_POST['element_4'];
+$ContactPersonName = $_POST['element_3_1'];
+//DefaultContact Number set to President and Vasu
+$DefaultContact =  '9789979734,'.'9677050053';
 $WardNumber = $_POST['WardElement'];
 $StreetName = $_POST['StreetName'];
 $LoggedinUser= $_SESSION["Uid"];
-//echo $LoggedinUser;
+echo $ContactNumber;
 $sql="INSERT INTO $tbl_name(ComplaintType, ComplaintDateDD, ComplaintDateMM,ComplaintDateYYYY,ComplaintDesc, ContactPersonName,ContactNumber,WardNumber,StreetName)VALUES('$ComplaintType','$ComplaintDateDD','$ComplaintDateMM','$ComplaintDateYYYY','$ComplaintDesc','$ContactPersonName','$ContactNumber','$WardNumber','$StreetName')";
 $SelectQuery="SELECT Phone FROM registration where Username='$LoggedinUser'";
 $result=mysql_query($sql);
@@ -31,7 +33,7 @@ if($result){
 echo "<BR>";
 echo "<a href='/avis9789979734/finalmudichurpanchayat/startfile.php' target = '_top'>Back to main page</a>";
 //SendSMS($ContactNumber,$ComplaintDesc);
-SendSMSGateway($ContactNumber,$ComplaintDesc,$UserPhoneNo);
+SendSMSGateway($DefaultContact,$ComplaintDesc,$UserPhoneNo);
 }
 
 else {
