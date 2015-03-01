@@ -16,7 +16,7 @@ $WardNumber = $_POST['WardElement'];
 $StreetName = $_POST['StreetName'];
 $LoggedinUser= $_SESSION["Uid"];
 //echo $LoggedinUser;
-$sql="INSERT INTO $tbl_name(ComplaintType, ComplaintDateDD, ComplaintDateMM, ComplaintDateYYYY, ComplaintDesc, ContactPersonName,ContactNumber,WardNumber,StreetName)VALUES('$ComplaintType','$ComplaintDateDD','$ComplaintDateMM','$ComplaintDateYYYY','$ComplaintDesc','$ContactPersonName','$ContactNumber','$WardNumber','$StreetName')";
+$sql="INSERT INTO $tbl_name(ComplaintType, ComplaintDateDD, ComplaintDateMM,ComplaintDateYYYY,ComplaintDesc, ContactPersonName,ContactNumber,WardNumber,StreetName)VALUES('$ComplaintType','$ComplaintDateDD','$ComplaintDateMM','$ComplaintDateYYYY','$ComplaintDesc','$ContactPersonName','$ContactNumber','$WardNumber','$StreetName')";
 $SelectQuery="SELECT Phone FROM registration where Username='$LoggedinUser'";
 $result=mysql_query($sql);
 $SelectResult = mysql_query($SelectQuery);
@@ -29,7 +29,7 @@ if($count==1){
 if($result){
 //echo "Successful";
 echo "<BR>";
-echo "<a href='/avis9789979734/finalmudichurpanchayat/startfile.php'>Back to main page</a>";
+echo "<a href='/avis9789979734/finalmudichurpanchayat/startfile.php' target = '_top'>Back to main page</a>";
 //SendSMS($ContactNumber,$ComplaintDesc);
 SendSMSGateway($ContactNumber,$ComplaintDesc,$UserPhoneNo);
 }
@@ -45,14 +45,14 @@ $url = "http://login.smsgatewayhub.com/smsapi/pushsms.aspx?user=ashok.jan31&pwd=
 echo $url;
 
 //SMS Code Comented to avoid triggering of SMS in production
-
+/*
 $ch = curl_init();
 // set URL and other appropriate options
 curl_setopt($ch, CURLOPT_URL,$url);
 // grab URL and pass it to the browser
 curl_exec($ch);
 // close cURL resource, and free up system resources
-curl_close($ch);
+curl_close($ch);*/
 
 }
 ?> 
