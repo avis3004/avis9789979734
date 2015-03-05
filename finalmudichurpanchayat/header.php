@@ -94,9 +94,9 @@
                     <li><a href="startfile.php">HOME</a></li>
                 <li><a href="">MY PANCHAYAT</a>
                  <ul>
-                <li><a href="">General particulars</a></li>    
+                <li><a href="about.php">General particulars</a></li>    
                 <li><a href="electbody.php">Elected body setup</a></li>   
-                <li><a href="">Official setup</a></li>      
+                <li><a href="officesetup.php">Official setup</a></li>      
                 <li><a href="districtprofile.php">District profile</a></li>
                 <li><a href="">Panchayat profile</a></li>   
                  </ul></li>
@@ -128,6 +128,7 @@
                                     <li><a href="">Videos</a></li>
                                 </ul>
                             </li>
+							 
                             <li><a href="">GOVT ORDER</a>
                                 <ul>
                                                               
@@ -137,10 +138,10 @@
                                     <?php } }?>                    
                                       <li><a href="">Public</a></li>
                                 </ul></li>
-                                <?php if(isset( $_SESSION["usertype"])){ ?>
+								 <?php if(isset( $_SESSION["usertype"])){ ?>
                                  <li><a href="#">COMPLAINTS</a>
 								                  <ul>
-								                  <li><a href="MudichurPanchayat/Complaints.php">User Complaints</a></li>
+								                  <li><a href="MudichurPanchayat/ComplaintFrame.html">User Complaints</a></li>
                                   </li>
                                   </ul>
                                  <?php }?>
@@ -150,9 +151,12 @@
 								<ul>
 								  <li><a href="PGrid.php">Complaints view</a></li>
 						          <li><a href="edoc.php">Edit Documents</a></li>
-                                </li>
+                                </li> </ul>
       <?php } }?>
-            </ul>
+          
+		   
+			<li><a href="contactus.php">CONTACT US</a></li>
+			</ul>
             </section>
             </div>
         </header>
