@@ -14,21 +14,21 @@ $col = array();
 $col["title"] = "ComplaintRefNo"; 
 $col["name"] = "ComplaintRefId"; 
 $col["width"] = "5"; 
-$col["editable"] = false; // this column is not editable 
+$col["editable"] = true; // this column is not editable 
 $cols[] = $col; 
 
 $col = array(); 
 $col["title"] = "ComplaintType"; 
 $col["name"] = "ComplaintType"; 
 $col["width"] = "5"; 
-$col["editable"] = false; // this column is not editable 
+$col["editable"] = true; // this column is not editable 
 $cols[] = $col;
 
 $col = array(); 
 $col["title"] = "WardNo"; 
 $col["name"] = "WardNumber"; 
 $col["width"] = "5"; 
-$col["editable"] = false; // this column is not editable 
+$col["editable"] = true; // this column is not editable 
 $cols[] = $col; 
 
 
@@ -36,14 +36,14 @@ $col = array();
 $col["title"] = "StreetName"; 
 $col["name"] = "StreetName"; 
 $col["width"] = "8"; 
-$col["editable"] = false; // this column is not editable 
+$col["editable"] = true; // this column is not editable 
 
 $cols[] = $col; 
 $col = array(); 
 $col["title"] = "Complaint Description"; 
 $col["name"] = "ComplaintDesc"; 
 $col["width"] = "10"; 
-$col["editable"] = false; // this column is not editable 
+$col["editable"] = true; // this column is not editable 
 $cols[] = $col; 
 
 $col = array(); 
