@@ -14,14 +14,24 @@ $col = array();
 $col["title"] = "ComplaintRefNo"; 
 $col["name"] = "ComplaintRefId"; 
 $col["width"] = "5"; 
-$col["editable"] = true; // this column is not editable 
+$col["editable"] = false; // this column is not editable 
+$col["align"] = "center";
 $cols[] = $col; 
+
+$col = array(); 
+$col["title"] = "ComplaintRegisteredBy"; 
+$col["name"] = "LoggedinUser"; 
+$col["width"] = "5"; 
+$col["editable"] = false; // this column is not editable 
+$col["align"] = "center";
+$cols[] = $col;
 
 $col = array(); 
 $col["title"] = "ComplaintType"; 
 $col["name"] = "ComplaintType"; 
 $col["width"] = "5"; 
 $col["editable"] = true; // this column is not editable 
+$col["align"] = "center";
 $cols[] = $col;
 
 $col = array(); 
@@ -29,6 +39,7 @@ $col["title"] = "WardNo";
 $col["name"] = "WardNumber"; 
 $col["width"] = "5"; 
 $col["editable"] = true; // this column is not editable 
+$col["align"] = "center";
 $cols[] = $col; 
 
 
@@ -37,8 +48,9 @@ $col["title"] = "StreetName";
 $col["name"] = "StreetName"; 
 $col["width"] = "8"; 
 $col["editable"] = true; // this column is not editable 
-
+$col["align"] = "center";
 $cols[] = $col; 
+
 $col = array(); 
 $col["title"] = "Complaint Description"; 
 $col["name"] = "ComplaintDesc"; 
@@ -53,6 +65,7 @@ $col["width"] = "8";
 $col["editable"] = true;
 $col["edittype"] = "select";
 $col["editoptions"] = array("value"=>'Completed:Completed;Inprogress:Inprogress;New:New;');
+$col["align"] = "center";
 $cols[] = $col;         
 
 
