@@ -14,6 +14,7 @@ $col = array();
 $col["title"] = "ComplaintRefNo"; 
 $col["name"] = "ComplaintRefId"; 
 $col["width"] = "5"; 
+$col["sortable"] = true;
 $col["editable"] = false; // this column is not editable 
 $col["align"] = "center";
 $cols[] = $col; 
