@@ -74,10 +74,13 @@
               <div class="formvalue"><img src="images/userpass.jpg"width="40px"height="45px" />Password</div>
               <input name="mypassword" type="password"  placeholder="Password" required="required" />
           </fieldset>
+             
           <fieldset id="actions">
             <input id="submit" type="submit" name="Submit" value="Login" />
           </fieldset>
-          </form>   
+          <fieldset>
+            <a class="alink" href="#">Forgot password</a>
+          </fieldset></form>   
       </div>                     
     </li>
       <li id="signup">
@@ -151,6 +154,7 @@
 								<ul>
 								  <li><a href="PGrid.php">Complaints view</a></li>
 						          <li><a href="edoc.php">Edit Documents</a></li>
+                                  <li><a href="#">Send SMS</a></li>
                                 </li> </ul>
       <?php } }?>
           
