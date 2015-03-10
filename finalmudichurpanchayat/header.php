@@ -79,7 +79,7 @@
             <input id="submit" type="submit" name="Submit" value="Login" />
           </fieldset>
           <fieldset>
-            <a class="alink" href="#">Forgot password</a>
+           <center> <a class="alink" href="#">Forgot password</a></center>
           </fieldset></form>   
       </div>                     
     </li>
